@@ -13,7 +13,6 @@ int main() {
     std::cout << "Original text:" << std::endl;
     text.printText();
 
-    // Clean up the text
     for (auto & line : text.lines) {
         line.trim();
         line.reduceSpaces();
