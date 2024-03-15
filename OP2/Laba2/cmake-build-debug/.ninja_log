@@ -1,0 +1,5 @@
+# ninja log v5
+3	512	7322014900183782	CMakeFiles/Laba2.dir/MyString.cpp.obj	49e07c5d22f07130
+0	528	7322014900333823	CMakeFiles/Laba2.dir/main.cpp.obj	d0958e616e6178bf
+2	655	7322014901614105	CMakeFiles/Laba2.dir/TextContainer.cpp.obj	4c3982ccb81f7370
+655	732	7322014902364279	Laba2.exe	3d773c206cd901cb
