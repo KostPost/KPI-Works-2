@@ -8,18 +8,18 @@
 		},
 		"paths" : 
 		{
-			"cmake" : "P:/Proga/IDEs/CLion 2023.3.4/bin/cmake/win/x64/bin/cmake.exe",
-			"cpack" : "P:/Proga/IDEs/CLion 2023.3.4/bin/cmake/win/x64/bin/cpack.exe",
-			"ctest" : "P:/Proga/IDEs/CLion 2023.3.4/bin/cmake/win/x64/bin/ctest.exe",
-			"root" : "P:/Proga/IDEs/CLion 2023.3.4/bin/cmake/win/x64/share/cmake-3.27"
+			"cmake" : "C:/Users/KostPost/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cmake.exe",
+			"cpack" : "C:/Users/KostPost/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/cpack.exe",
+			"ctest" : "C:/Users/KostPost/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/bin/ctest.exe",
+			"root" : "C:/Users/KostPost/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 27,
-			"patch" : 8,
-			"string" : "3.27.8",
+			"minor" : 28,
+			"patch" : 1,
+			"string" : "3.28.1",
 			"suffix" : ""
 		}
 	},
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-6b7e13f6b3fbc505f6d8.json",
+			"jsonFile" : "cache-v2-6b9ced38849afbb9f519.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-275e51b18b96ad017020.json",
+			"jsonFile" : "cmakeFiles-v1-6bbd4cb683e01119d81e.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -53,7 +53,7 @@
 			}
 		},
 		{
-			"jsonFile" : "toolchains-v1-1a3b08068c70a94a53e9.json",
+			"jsonFile" : "toolchains-v1-c760d685c0ec37dc65fd.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-6b7e13f6b3fbc505f6d8.json",
+			"jsonFile" : "cache-v2-6b9ced38849afbb9f519.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-275e51b18b96ad017020.json",
+			"jsonFile" : "cmakeFiles-v1-6bbd4cb683e01119d81e.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -96,7 +96,7 @@
 		},
 		"toolchains-v1" : 
 		{
-			"jsonFile" : "toolchains-v1-1a3b08068c70a94a53e9.json",
+			"jsonFile" : "toolchains-v1-c760d685c0ec37dc65fd.json",
 			"kind" : "toolchains",
 			"version" : 
 			{
