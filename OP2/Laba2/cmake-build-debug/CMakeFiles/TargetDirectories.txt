@@ -1,3 +1,0 @@
-P:/Proga/KPI-Works 2/OP2/Laba2/cmake-build-debug/CMakeFiles/Laba2.dir
-P:/Proga/KPI-Works 2/OP2/Laba2/cmake-build-debug/CMakeFiles/edit_cache.dir
-P:/Proga/KPI-Works 2/OP2/Laba2/cmake-build-debug/CMakeFiles/rebuild_cache.dir

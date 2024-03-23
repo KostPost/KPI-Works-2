@@ -1,0 +1,15 @@
+P:\Proga\KPI-Works 2\OP2\Laba1\bin\Debug\net8.0\Laba1.exe
+P:\Proga\KPI-Works 2\OP2\Laba1\bin\Debug\net8.0\Laba1.deps.json
+P:\Proga\KPI-Works 2\OP2\Laba1\bin\Debug\net8.0\Laba1.runtimeconfig.json
+P:\Proga\KPI-Works 2\OP2\Laba1\bin\Debug\net8.0\Laba1.dll
+P:\Proga\KPI-Works 2\OP2\Laba1\bin\Debug\net8.0\Laba1.pdb
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\Laba1.GeneratedMSBuildEditorConfig.editorconfig
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\Laba1.AssemblyInfoInputs.cache
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\Laba1.AssemblyInfo.cs
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\Laba1.csproj.CoreCompileInputs.cache
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\Laba1.sourcelink.json
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\Laba1.dll
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\refint\Laba1.dll
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\Laba1.pdb
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\Laba1.genruntimeconfig.cache
+P:\Proga\KPI-Works 2\OP2\Laba1\obj\Debug\net8.0\ref\Laba1.dll
