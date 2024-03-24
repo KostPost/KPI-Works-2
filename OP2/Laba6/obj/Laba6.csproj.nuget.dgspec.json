@@ -1,0 +1,61 @@
+{
+  "format": 1,
+  "restore": {
+    "P:\\Proga\\KPI-Works 2\\OP2\\Laba6\\Laba6.csproj": {}
+  },
+  "projects": {
+    "P:\\Proga\\KPI-Works 2\\OP2\\Laba6\\Laba6.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "P:\\Proga\\KPI-Works 2\\OP2\\Laba6\\Laba6.csproj",
+        "projectName": "Laba6",
+        "projectPath": "P:\\Proga\\KPI-Works 2\\OP2\\Laba6\\Laba6.csproj",
+        "packagesPath": "C:\\Users\\KostPost\\.nuget\\packages\\",
+        "outputPath": "P:\\Proga\\KPI-Works 2\\OP2\\Laba6\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\KostPost\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\KostPost\\.dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
