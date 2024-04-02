@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6809FD48-179D-4A37-AC48-C090E631AC96}|Laba2.csproj|p:\\proga\\kpi-works 2\\op2\\laba2\\mystring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6809FD48-179D-4A37-AC48-C090E631AC96}|Laba2.csproj|solutionrelative:mystring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6809FD48-179D-4A37-AC48-C090E631AC96}|Laba2.csproj|p:\\proga\\kpi-works 2\\op2\\laba2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6809FD48-179D-4A37-AC48-C090E631AC96}|Laba2.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MyString.cs",
+              "DocumentMoniker": "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\MyString.cs",
+              "RelativeDocumentMoniker": "MyString.cs",
+              "ToolTip": "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\MyString.cs",
+              "RelativeToolTip": "MyString.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T19:49:07.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-27T19:49:03.651Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

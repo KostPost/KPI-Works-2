@@ -1,0 +1,156 @@
+<mxfile host="Electron" modified="2024-04-02T22:27:50.023Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.1.0 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="ycrGa2_AlYUAQlb25Nzd" version="24.1.0" type="device">
+  <diagram name="Page-1" id="W-HxV3eET0fKOatoMU0g">
+    <mxGraphModel dx="1008" dy="573" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-1" value="Фільм" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="80" width="160" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-2" value="назва: string&amp;nbsp;&lt;div&gt;жанр: string&amp;nbsp;&lt;/div&gt;&lt;div&gt;тривалість: double&lt;/div&gt;&lt;div&gt;вікове обмеження: int режисер: string&amp;nbsp;&lt;/div&gt;&lt;div&gt;опис: string&amp;nbsp;&lt;/div&gt;&lt;div&gt;рейтинг: float&amp;nbsp;&lt;/div&gt;&lt;div&gt;дата виходу: date&lt;/div&gt;&lt;div&gt;id: Long&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-1">
+          <mxGeometry y="26" width="160" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-1">
+          <mxGeometry y="160" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-4" value="отриматиІнформацію():&amp;nbsp; змінитиРейтинг(float): void відображенняРозкладу():&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-1">
+          <mxGeometry y="168" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-5" value="Сеанс" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="80" width="160" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-6" value="дата: date&amp;nbsp;&lt;div&gt;час: time&amp;nbsp;&lt;/div&gt;&lt;div&gt;зал: Long&amp;nbsp;&lt;/div&gt;&lt;div&gt;вільні місця: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;ціна: float&lt;/div&gt;&lt;div&gt;id: Long&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-5">
+          <mxGeometry y="26" width="160" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-5">
+          <mxGeometry y="130" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-8" value="забронюватиМісця(int): відмінитиСеанс(): void оновитиІнформацію(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-5">
+          <mxGeometry y="138" width="160" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-9" value="Квиток" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="80" width="160" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-10" value="номер: int&amp;nbsp;&lt;div&gt;ряд: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;місце: int&amp;nbsp;&lt;/div&gt;&lt;div&gt;ціна: float&amp;nbsp;&lt;/div&gt;&lt;div&gt;id: Long&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-9">
+          <mxGeometry y="26" width="160" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-9">
+          <mxGeometry y="130" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-12" value="валідувати(): boolean відмінити(): void&amp;nbsp;&lt;div&gt;друк(): void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-9">
+          <mxGeometry y="138" width="160" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-13" value="Повернення квитків" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="320" width="160" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-14" value="квиток: Квиток&lt;div&gt;причина: string&amp;nbsp;&lt;/div&gt;&lt;div&gt;час повернення: datetime сума: float&lt;/div&gt;&lt;div&gt;id операції: Long&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-13">
+          <mxGeometry y="26" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-13">
+          <mxGeometry y="110" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-16" value="обробитиПовернення(): перевіритиУмови():&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-13">
+          <mxGeometry y="118" width="160" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-17" value="Клієнт" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="320" width="180" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-18" value="ім&#39;я: string&amp;nbsp;&lt;div&gt;прізвище: string електронна пошта: string&amp;nbsp;&lt;/div&gt;&lt;div&gt;телефон: string&amp;nbsp;&lt;/div&gt;&lt;div&gt;історія покупок:&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-17">
+          <mxGeometry y="26" width="180" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-17">
+          <mxGeometry y="110" width="180" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-20" value="зареєструватися(): void авторизуватися(): boolean замовитиКвиток(): Ticket оцінитиФільм(float): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-17">
+          <mxGeometry y="118" width="180" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-21" value="Адміністратор" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="320" width="170" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-22" value="ім&#39;я: string прізвище: string електронна пошта: string рівеньДоступу: AccessLevel" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-21">
+          <mxGeometry y="26" width="170" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-21">
+          <mxGeometry y="110" width="170" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-24" value="додатиФільм(Film): void оновитиСеанс(Session): void видалитиФільм(Film): void переглядЗвітів(): Report[]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-21">
+          <mxGeometry y="118" width="170" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-25" value="Відгук" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="530" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-26" value="користувач: User фільм: Film текст: string рейтинг: float дата: datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-25">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-27" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-25">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-28" value="додатиВідгук(): void видалитиВідгук(): void отриматиВсіВідгуки():&amp;nbsp;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-25">
+          <mxGeometry y="98" width="160" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-29" value="Оплата" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="530" width="160" height="180" as="geometry">
+            <mxRectangle x="410" y="460" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-30" value="квиток: Ticket сума: float спосібОплати: PaymentMethod часОплати: datetime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-29">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-31" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-29">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-32" value="провестиОплату(): PaymentStatus верифікуватиТранзакцію(): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-29">
+          <mxGeometry y="98" width="160" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-33" value="Розклад" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="530" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-34" value="сеанси: Session[] дата: date кінотеатр: Cinema" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-33">
+          <mxGeometry y="26" width="160" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-35" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-33">
+          <mxGeometry y="60" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-36" value="отриматиРозклад():&amp;nbsp; оновитиРозклад(): void видалитиСеанс(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-33">
+          <mxGeometry y="68" width="160" height="112" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-37" value="Кінотеатр" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="740" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-38" value="назва: string адреса: string зал: CinemaHall[] контактнаІнформація: ContactInfo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-37">
+          <mxGeometry y="26" width="160" height="64" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-39" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-37">
+          <mxGeometry y="90" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-40" value="додатиЗал(): void видалитиЗал(): void оновитиІнформацію(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-37">
+          <mxGeometry y="98" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-41" value="Бар" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="740" width="160" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-42" value="меню: MenuItem[] годиниРоботи: TimeInterval ціни: PriceList" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-41">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-41">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-44" value="додатиВМеню(): void видалитиЗМеню(): void змінитиЦіну(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-41">
+          <mxGeometry y="88" width="160" height="52" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-49" value="Акції" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="740" width="160" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-50" value="пропозиція: SpecialOffer дійснаДо: date умови: string" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-49">
+          <mxGeometry y="26" width="160" height="54" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-51" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-49">
+          <mxGeometry y="80" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Xe3Pd-iEGYzMwIOEl643-52" value="додатиАкцію(): void видалитиАкцію(): void застосуватиАкцію(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Xe3Pd-iEGYzMwIOEl643-49">
+          <mxGeometry y="88" width="160" height="62" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
