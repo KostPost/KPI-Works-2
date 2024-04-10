@@ -26,21 +26,22 @@ public class BuildingsContext : DbContext
 
 
 
-    public static void AddBuilding()
+    public static void AddBuilding(string buildingName, int numberOfFloors)
     {
         using (var context = new BuildingsContext())
         {
             var newBuilding = new Building
             {
-                BuildingName = "build 1",
-                NumberOfFloors = 10
+                BuildingName = buildingName,
+                NumberOfFloors = numberOfFloors
             };
 
             context.buildings.Add(newBuilding);
 
             context.SaveChanges();
 
-            Console.WriteLine($"Building with ID {newBuilding.BuildingId} added successfully.");
+            Console.WriteLine($"Building '{buildingName}' with ID {newBuilding.BuildingId} added successfully.");
         }
     }
+
 }

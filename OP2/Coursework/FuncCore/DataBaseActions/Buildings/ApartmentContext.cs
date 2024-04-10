@@ -1,31 +1,33 @@
-﻿using FuncCore.Buildings;
+﻿using System.Runtime.InteropServices.JavaScript;
+using FuncCore.Buildings;
 using Microsoft.EntityFrameworkCore;
 
 namespace FuncCore.DataBaseActions;
 
 public class ApartmentContext : DbContext
 {
-    public DbSet<Apartment> apartments  { get; set; }
+    public DbSet<Apartment> apartments { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseNpgsql("Host=localhost;Database=\"Management of the house\";Username=postgres;Password=2025");
     }
-    
+
     public static Apartment? GetApartmentByNumberAndBuildingId(ApartmentContext context, int number, long buildingId)
     {
         return context.apartments.FirstOrDefault(a => a.Number == number && a.BuildingId == buildingId);
     }
-    public static void AddApartment(ApartmentContext context, int number, long roomCount, long floor, long buildingId,decimal costByOneM , Building building)
+
+    public static void AddApartment(ApartmentContext context, int number, long roomCount, long floor, long buildingId,
+        decimal costByOneM, Building building)
     {
-        
         var newApartment = new Apartment
         {
             Number = number,
             RoomCount = roomCount,
             Floor = floor,
             BuildingId = buildingId,
-            CostByOneM = costByOneM
+            CostPerSquareMeter = costByOneM
         };
 
         if (floor > building.NumberOfFloors)
@@ -34,21 +36,19 @@ public class ApartmentContext : DbContext
             return;
         }
 
-        context.apartments.Add(newApartment); 
+        context.apartments.Add(newApartment);
         context.SaveChanges();
         Console.WriteLine($"Apartment with ID {newApartment.ApartmetId} added successfully.");
     }
 
 
-    
     public static List<Apartment> FindApartmentsByBuildingId(ApartmentContext context, long buildingId)
     {
         var apartments = context.apartments.Where(a => a.BuildingId == buildingId).ToList();
-    
+
         if (apartments.Any())
         {
             Console.WriteLine($"Found {apartments.Count} apartments in building ID {buildingId}:");
-
         }
         else
         {
@@ -59,6 +59,16 @@ public class ApartmentContext : DbContext
     }
 
 
+    public static void UpdateCostPerSquareMeter(Apartment apartment, decimal newCost)
+    {
+        apartment.CostPerSquareMeter = newCost;
 
+        using (var dbContext = new ApartmentContext()) // Замените YourDbContext на ваш реальный контекст базы данных
+        {
+            dbContext.Entry(apartment).State = EntityState.Modified;
+            dbContext.SaveChanges();
+        }
 
+        Console.WriteLine($"Cost per square meter for apartment {apartment.Number} updated successfully.");
+    }
 }

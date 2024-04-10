@@ -23,8 +23,13 @@ public class Apartment
     public long BuildingId { get; set; }
     
     
-    [Column("coast_by_one_m")]
-    public decimal  CostByOneM { get; set; }
+    [Column("cost_per_square_meter")]
+    public decimal? CostPerSquareMeter { get; set; }
+    
+    public String Resident { get; set; }
+    
+    [NotMapped]
+    public bool IsOccupied { get; set; }
     
     
     [NotMapped]

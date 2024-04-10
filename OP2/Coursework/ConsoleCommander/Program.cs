@@ -24,10 +24,21 @@ namespace ConsoleCommander
                 {
                     case "1":
                     {
-                        BuildingsContext.AddBuilding();
+                        Console.WriteLine("Enter the building name:");
+                        string buildingName = Console.ReadLine();
+
+                        Console.WriteLine("Enter the number of floors:");
+                        int numberOfFloors;
+                        while (!int.TryParse(Console.ReadLine(), out numberOfFloors))
+                        {
+                            Console.WriteLine("Invalid input. Please enter a valid number for the number of floors:");
+                        }
+
+                        BuildingsContext.AddBuilding(buildingName, numberOfFloors);
 
                         break;
                     }
+
 
                     case "2":
                     {
@@ -56,12 +67,7 @@ namespace ConsoleCommander
                             if (currentBuilding != null)
                             {
                                 Console.WriteLine(
-                                    $"Found Building: ID = {currentBuilding.BuildingId}, Name = {currentBuilding.BuildingName}, Number of Floors = {currentBuilding.NumberOfFloors}");
-                               
-                                
-                                currentBuilding.Apartments = ApartmentContext.FindApartmentsByBuildingId(
-                                    new ApartmentContext(),
-                                    currentBuilding.BuildingId);
+                                    $"Found Building: ID = {currentBuilding.BuildingId}, Name = {currentBuilding.BuildingName}, Number of Floors = {currentBuilding.NumberOfFloors}"); 
 
                                 break;
                             }
@@ -76,21 +82,28 @@ namespace ConsoleCommander
                             string action;
                             do
                             {
+                                
+                                currentBuilding.Apartments = ApartmentContext.FindApartmentsByBuildingId(
+                                    new ApartmentContext(),
+                                    currentBuilding.BuildingId);
+                                
                                 Console.WriteLine("\nSelect an action (or type 'exit' to go back):");
                                 Console.WriteLine("1. Add apartment to the building");
                                 Console.WriteLine("2. See all apartments in the building");
+                                Console.WriteLine("3: Choose an apartment");
                                 action = Console.ReadLine()?.ToLower();
 
                                 switch (action)
                                 {
                                     case "1":
                                     {
-                                        Console.WriteLine("\nEnter apartment details: number, room count, floor, cost per square meter.");
+                                        Console.WriteLine(
+                                            "\nEnter apartment details: number, room count, floor, cost per square meter.");
                                         var details = Console.ReadLine().Split(',');
                                         if (details.Length == 4 && int.TryParse(details[0], out int number) &&
                                             long.TryParse(details[1], out long roomCount) &&
                                             long.TryParse(details[2], out long floor) &&
-                                            decimal.TryParse(details[3], out decimal costByOneM))
+                                            decimal.TryParse(details[3], out decimal costPerSquareMeter))
                                         {
                                             var existingApartment = ApartmentContext.GetApartmentByNumberAndBuildingId(
                                                 new ApartmentContext(), number, currentBuilding.BuildingId);
@@ -110,12 +123,14 @@ namespace ConsoleCommander
                                             }
 
                                             Console.WriteLine(
-                                                $"\nConfirm adding apartment with details: Number = {number}, Room Count = {roomCount}, Floor = {floor} (yes/no)?");
+                                                $"\nConfirm adding apartment with details: Number = {number}, Room Count = {roomCount}, Floor = {floor} " +
+                                                $"Cost per square meter: {costPerSquareMeter} (yes/no)?");
                                             var confirmation = Console.ReadLine()?.ToLower();
                                             if (confirmation == "yes")
                                             {
                                                 ApartmentContext.AddApartment(new ApartmentContext(), number, roomCount,
-                                                    floor, currentBuilding.BuildingId,costByOneM , currentBuilding);
+                                                    floor, currentBuilding.BuildingId, costPerSquareMeter,
+                                                    currentBuilding);
                                                 Console.WriteLine("\nApartment added successfully!");
                                             }
                                             else
@@ -134,14 +149,15 @@ namespace ConsoleCommander
 
                                     case "2":
                                         var apartments = currentBuilding.Apartments;
-                                           
+
                                         if (apartments.Any())
                                         {
                                             Console.WriteLine("\nApartments in the building:");
                                             foreach (var apartment in apartments)
                                             {
                                                 Console.WriteLine(
-                                                    $"Apartment ID: {apartment.ApartmetId}, Number: {apartment.Number}, Room Count: {apartment.RoomCount}, Floor: {apartment.Floor}");
+                                                    $"Apartment ID: {apartment.ApartmetId}, Number: {apartment.Number}, Room Count: {apartment.RoomCount}, Floor: {apartment.Floor}" +
+                                                    $", Cost per square meter: {apartment.CostPerSquareMeter}");
                                             }
                                         }
                                         else
@@ -150,6 +166,90 @@ namespace ConsoleCommander
                                         }
 
                                         break;
+
+                                    case "3":
+                                    {
+                                        bool workingWithApartment = true;
+
+                                        Console.WriteLine("Enter the apartment number:");
+                                        var apartmentNumberInput = Console.ReadLine();
+                                        if (int.TryParse(apartmentNumberInput, out int apartmentNumber))
+                                        {
+                                            var apartment =
+                                                ApartmentContext.GetApartmentByNumberAndBuildingId(
+                                                    new ApartmentContext(), apartmentNumber,
+                                                    currentBuilding.BuildingId);
+                                            if (apartment != null)
+                                            {
+                                                do
+                                                {
+                                                    Console.WriteLine(
+                                                        $"Apartment found with number {apartmentNumber}. What would you like to do?");
+                                                    Console.WriteLine("1. View details");
+                                                    Console.WriteLine("2. Edit data about residents");
+                                                    Console.WriteLine("3. Edit cost per square meter");
+                                                    Console.WriteLine("4. Delete apartment");
+                                                    Console.WriteLine("5. Go back");
+
+                                                    var actionChoice = Console.ReadLine();
+                                                    switch (actionChoice)
+                                                    {
+                                                        case "1":
+                                                            Console.WriteLine(
+                                                                $"Apartment ID: {apartment.ApartmetId}, Number: {apartment.Number}, Room Count: {apartment.RoomCount}, Floor: {apartment.Floor}" +
+                                                                $", Cost per square meter: {apartment.CostPerSquareMeter}");
+                                                            break;
+
+                                                        case "2":
+                                                        {
+                                                            
+                                                        }
+
+                                                            break;
+                                                        
+                                                        case "3":
+                                                        {
+                                                            Console.WriteLine("Enter new cost per square meter:");
+                                                            var newCostInput = Console.ReadLine();
+                                                            if (decimal.TryParse(newCostInput, out decimal newCost))
+                                                            {
+                                                                ApartmentContext.UpdateCostPerSquareMeter(apartment,newCost);
+                                                                Console.WriteLine(
+                                                                    "Cost per square meter updated successfully.");
+                                                            }
+                                                            else
+                                                            {
+                                                                Console.WriteLine(
+                                                                    "Invalid input for cost per square meter.");
+                                                            }
+                                                        }
+
+                                                            break;
+                                                        case "5":
+                                                            workingWithApartment = false;
+
+                                                            break;
+                                                        default:
+                                                            Console.WriteLine("Invalid choice.");
+                                                            break;
+                                                    }
+                                                } while (workingWithApartment);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine(
+                                                    $"Apartment with number {apartmentNumber} not found in this building.");
+                                            }
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine(
+                                                "Invalid input. Please enter a valid apartment number.");
+                                        }
+
+
+                                        break;
+                                    }
 
 
                                     case "exit":
