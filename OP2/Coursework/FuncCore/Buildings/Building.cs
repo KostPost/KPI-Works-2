@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 namespace FuncCore.Buildings;
 
 [Index(nameof(BuildingName), IsUnique = true)]
+[Table("buildings")]
 public class Building
 {
     [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity), Column("id")]

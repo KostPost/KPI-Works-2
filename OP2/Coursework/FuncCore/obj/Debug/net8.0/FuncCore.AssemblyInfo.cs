@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FuncCore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7b27c7c8dfe5e456dabdad3cf22a2fe1e504cacd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8671e4c31e494e9743be0cea386385b01e251f2e")]
 [assembly: System.Reflection.AssemblyProductAttribute("FuncCore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FuncCore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

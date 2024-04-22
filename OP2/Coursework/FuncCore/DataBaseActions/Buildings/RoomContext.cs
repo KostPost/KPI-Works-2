@@ -6,7 +6,7 @@ namespace FuncCore.DataBaseActions;
 public class RoomContext : DbContext
 {
     
-    public DbSet<Room> rooms { get; set; }
+    public DbSet<Room> Rooms { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {

@@ -4,6 +4,7 @@ using FuncCore.Persons;
 
 namespace FuncCore.Buildings;
 
+[Table("rooms")]
 public class Room
 {
     [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity), Column("id")]

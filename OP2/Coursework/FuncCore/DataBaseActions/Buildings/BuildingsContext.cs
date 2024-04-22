@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 public class BuildingsContext : DbContext
 {
-    public DbSet<Building> buildings { get; set; }
+    public DbSet<Building> Buildings { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -17,11 +17,11 @@ public class BuildingsContext : DbContext
     
     public static Building? FindBuildingById(BuildingsContext context, long id)
     {
-        return context.buildings.FirstOrDefault(b => b.BuildingId == id);
+        return context.Buildings.FirstOrDefault(b => b.BuildingId == id);
     }
     public static Building? FindBuildingByName(BuildingsContext context, string name)
     {
-        return context.buildings.FirstOrDefault(b => b.BuildingName == name);
+        return context.Buildings.FirstOrDefault(b => b.BuildingName == name);
     }
 
 
@@ -36,7 +36,7 @@ public class BuildingsContext : DbContext
                 NumberOfFloors = numberOfFloors
             };
 
-            context.buildings.Add(newBuilding);
+            context.Buildings.Add(newBuilding);
 
             context.SaveChanges();
 

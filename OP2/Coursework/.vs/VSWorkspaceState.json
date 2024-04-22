@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\ConsoleCommander",
+    "\\FuncCore",
+    "\\FuncCore\\Buildings",
+    "\\FuncCore\\DataBaseActions",
+    "\\FuncCore\\DataBaseActions\\Buildings",
+    "\\FuncCore\\DataBaseActions\\Persons",
+    "\\FuncCore\\Persons"
+  ],
+  "SelectedNode": "\\ConsoleCommander\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}

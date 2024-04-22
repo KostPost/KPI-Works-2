@@ -1,10 +1,13 @@
-﻿namespace FuncCore.Persons;
-
-public class Resident : Person
-{
-    public int ApartmentNumber { get; set; }
-    public decimal RentCost { get; set; }
-    public DateTime RentTermStart { get; set; }
-    public DateTime RentTermEnd { get; set; }
-    public decimal UtilityExpenses { get; set; }
-}
+﻿// using System.ComponentModel.DataAnnotations;
+// using System.ComponentModel.DataAnnotations.Schema;
+// using FuncCore.Buildings;
+//
+// namespace FuncCore.Persons;
+//
+// public class Resident : Person
+// {
+//     [Column("apartment_id")] public long? ApartmentId { get; set; } // Теперь nullable
+//
+//     [ForeignKey("ApartmentId")]
+//     public virtual Apartment Apartment { get; set; }
+// }
