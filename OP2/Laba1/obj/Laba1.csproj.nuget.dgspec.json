@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\Proga\\KPI-Works 2\\OP2\\Laba1\\Laba1.csproj": {}
+    "P:\\KPI-Works 2\\OP2\\Laba1\\Laba1.csproj": {}
   },
   "projects": {
-    "P:\\Proga\\KPI-Works 2\\OP2\\Laba1\\Laba1.csproj": {
+    "P:\\KPI-Works 2\\OP2\\Laba1\\Laba1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Proga\\KPI-Works 2\\OP2\\Laba1\\Laba1.csproj",
+        "projectUniqueName": "P:\\KPI-Works 2\\OP2\\Laba1\\Laba1.csproj",
         "projectName": "Laba1",
-        "projectPath": "P:\\Proga\\KPI-Works 2\\OP2\\Laba1\\Laba1.csproj",
+        "projectPath": "P:\\KPI-Works 2\\OP2\\Laba1\\Laba1.csproj",
         "packagesPath": "C:\\Users\\KostPost\\.nuget\\packages\\",
-        "outputPath": "P:\\Proga\\KPI-Works 2\\OP2\\Laba1\\obj\\",
+        "outputPath": "P:\\KPI-Works 2\\OP2\\Laba1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -1,0 +1,3 @@
+P:/KPI-Works 2/Algorithms/Laba6/cmake-build-debug/CMakeFiles/Laba6.dir
+P:/KPI-Works 2/Algorithms/Laba6/cmake-build-debug/CMakeFiles/edit_cache.dir
+P:/KPI-Works 2/Algorithms/Laba6/cmake-build-debug/CMakeFiles/rebuild_cache.dir
