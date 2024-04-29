@@ -77,14 +77,30 @@ void printEuclideanTour(int start) {
 
 
 int main() {
-    edges.resize(4, vector<int>(4, 0));
+    edges.resize(15, vector<int>(15, 0));
+
     addEdge(0, 1);
-    addEdge(0, 2);
     addEdge(1, 2);
-    addEdge(2, 0);
     addEdge(2, 3);
-    addEdge(3, 3);
-    printEuclideanTour(2);
+    addEdge(3, 4);
+    addEdge(4, 5);
+    addEdge(5, 6);
+    addEdge(6, 7);
+    addEdge(7, 8);
+    addEdge(8, 9);
+    addEdge(9, 10);
+    addEdge(10, 11);
+    addEdge(11, 12);
+    addEdge(12, 13);
+    addEdge(13, 14);
+    addEdge(14, 0);
+    addEdge(0, 3);
+    addEdge(3, 6);
+    addEdge(6, 9);
+    addEdge(9, 12);
+    addEdge(12, 0);
+
+    printEuclideanTour(0);
 
     return 0;
 }

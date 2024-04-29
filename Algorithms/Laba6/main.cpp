@@ -91,11 +91,11 @@ int main() {
 
         switch (choice) {
             case '1':
-                cout << "Enter product name: ";
+                cout << "Enter product name:";
                 cin >> name;
 
                 try {
-                    cout << "Enter quantity: ";
+                    cout << "Enter quantity:1";
                     cin >> quantity;
                     if (cin.fail()) {
                         throw invalid_argument("Invalid input. Please enter a valid integer for quantity.");

@@ -1,13 +1,15 @@
 package org.kostpost;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
         int[] arr = {5, 2, 8, 1, 9, 3, 7, 4, 6};
+        System.out.println("Before sorting: " + Arrays.toString(arr));
+
         sort(arr);
-        for (int num : arr) {
-            System.out.print(num + " ");
-        }
+        System.out.println("After sorting: " + Arrays.toString(arr));
     }
 
     public static void sort(int[] arr) {
