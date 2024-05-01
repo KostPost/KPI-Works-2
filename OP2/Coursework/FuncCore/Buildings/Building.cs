@@ -1,23 +1,48 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using FuncCore.DataBaseActions;
 using Microsoft.EntityFrameworkCore;
 
 namespace FuncCore.Buildings;
 
-[Index(nameof(BuildingName), IsUnique = true)]
-[Table("buildings")]
 public class Building
 {
-    [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity), Column("id")]
-    public long BuildingId { get; set; }
-    
-    [Column("building_name")]
+    public long BuildingId;
     public string BuildingName { get; set; }
 
-    [Column("number_of_floors")]
     public long NumberOfFloors { get; set; }
+    
+    public List<Apartment> Apartments { get; set; } = new List<Apartment>();
+    
+    private static long lastBuildingId = 0;
 
-    [NotMapped] public List<Apartment> Apartments { get; set; } = new List<Apartment>();
+
+    public Building(string buildingName, long numberOfFloors)
+    {
+        BuildingId = GenerateBuildingId();
+        BuildingName = buildingName;
+        NumberOfFloors = numberOfFloors;
+    }
+    private static long GenerateBuildingId()
+    {
+        return ++lastBuildingId;
+    }
+    
+    public bool AddApartment(Apartment newApartment)
+    {
+        if (Apartments.Any(apartment => apartment.ApartmentNumber == newApartment.ApartmentNumber))
+        {
+            Console.WriteLine($"Error: Apartment with number {newApartment.ApartmentNumber} already exists in building {BuildingName}.");
+            return false;
+        }
+
+        if (newApartment.Floor > NumberOfFloors)
+        {
+            Console.WriteLine("Error: The floor of the apartment cannot exceed the maximum floor of the building.");
+            return false;
+        }
+
+        Apartments.Add(newApartment);
+        return true;
+    }
 
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj": {}
+    "P:\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj": {}
   },
   "projects": {
-    "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj": {
+    "P:\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj",
+        "projectUniqueName": "P:\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj",
         "projectName": "ConsoleCommander",
-        "projectPath": "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj",
+        "projectPath": "P:\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj",
         "packagesPath": "C:\\Users\\KostPost\\.nuget\\packages\\",
-        "outputPath": "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\obj\\",
+        "outputPath": "P:\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj": {
-                "projectPath": "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj"
+              "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj": {
+                "projectPath": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj"
               }
             }
           }
@@ -67,14 +67,14 @@
         }
       }
     },
-    "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj": {
+    "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj",
+        "projectUniqueName": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj",
         "projectName": "FuncCore",
-        "projectPath": "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj",
+        "projectPath": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj",
         "packagesPath": "C:\\Users\\KostPost\\.nuget\\packages\\",
-        "outputPath": "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\obj\\",
+        "outputPath": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

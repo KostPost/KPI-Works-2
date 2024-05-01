@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2SkIsZBL1QloTymf8LUE+QY8yZ/7IJq1voGFyWMlwFtW2rprQyFctxYMboy8JtCGVvnnOazNxA01T0s0uJuV8g==",
+  "dgSpecHash": "+o0Br9cl7UN5A2kSAR6MsYQsRLHUlrMUMnndhu5K3gQ2YYlFrCYRxbXgvKIOfrDpwgJsCBTis7W9p/RLSySjyA==",
   "success": true,
-  "projectFilePath": "P:\\Proga\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj",
+  "projectFilePath": "P:\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\ConsoleCommander.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KostPost\\.nuget\\packages\\microsoft.entityframeworkcore\\9.0.0-preview.2.24128.4\\microsoft.entityframeworkcore.9.0.0-preview.2.24128.4.nupkg.sha512",
     "C:\\Users\\KostPost\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\9.0.0-preview.2.24128.4\\microsoft.entityframeworkcore.abstractions.9.0.0-preview.2.24128.4.nupkg.sha512",

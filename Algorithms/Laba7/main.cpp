@@ -6,12 +6,12 @@
 
 using namespace std;
 
-unsigned int fnv1Hash(const string& key) {
+unsigned int fnv1Hash(const string &key) {
     const unsigned int FNV_offset_basis = 2166136261;
     const unsigned int FNV_prime = 16777619;
     unsigned int hash = FNV_offset_basis;
 
-    for (char c : key) {
+    for (char c: key) {
         hash ^= static_cast<unsigned int>(c);
         hash *= FNV_prime;
     }
@@ -23,7 +23,9 @@ struct HashEntry {
     string key;
     int value;
     bool isEmpty;
-    HashEntry() : key(""), value(0), isEmpty(true) {}
+
+    HashEntry() : key(""), value(0), isEmpty(true) {
+    }
 };
 
 class HashTable {
@@ -32,7 +34,7 @@ private:
     int capacity;
     int size;
 
-    int doubleHash(const string& key, int i) const {
+    int doubleHash(const string &key, int i) const {
         unsigned int hash1 = fnv1Hash(key);
         unsigned int hash2 = fnv1Hash(to_string(i));
         return (hash1 + i * hash2) % capacity;
@@ -43,7 +45,7 @@ public:
         table.resize(capacity);
     }
 
-    void insert(const string& key, int value) {
+    void insert(const string &key, int value) {
         if (size == capacity) {
             cout << "Hash table is full!" << endl;
             return;
@@ -62,7 +64,7 @@ public:
         size++;
     }
 
-    int get(const string& key) {
+    int get(const string &key) {
         int index = fnv1Hash(key) % capacity;
         int i = 0;
         while (!table[index].isEmpty && table[index].key != key) {
@@ -83,7 +85,7 @@ public:
     }
 
     void printAll() {
-        for (const auto& entry : table) {
+        for (const auto &entry: table) {
             if (!entry.isEmpty) {
                 cout << "Key: " << entry.key << ", Value: " << entry.value << endl;
             }
@@ -91,60 +93,62 @@ public:
     }
 };
 
+
 int main() {
-    // Зчитуємо розмір структури від користувача
-    int capacities[] = {100, 1000, 5000, 10000, 20000};
+    int capacity;
+    cout << "Enter capacity of hash table:";
+    cin >> capacity;
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
-    for (int capacity : capacities) {
-        HashTable hashTable(capacity);
+    HashTable hashTable(capacity);
 
-        auto start = chrono::high_resolution_clock::now(); // Початок вимірювання часу
+    while (true) {
+        cout << "\n1. Add an element\n2. View all elements\n3. Search for a value by key\n4. Exit\n";
+        cout << "Enter your choice:";
+        int choice;
+        cin >> choice;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
-        // Ваш код, що заповнює хеш-таблицю
+        switch (choice) {
+            case 1: {
+                if (hashTable.getSize() >= capacity) {
+                    cout << "Hash table is full. Cannot add more elements." << endl;
+                    break;
+                }
 
-        auto stop = chrono::high_resolution_clock::now(); // Кінець вимірювання часу
-        auto duration = std::chrono::duration_cast<std::chrono::milliseconds>(stop - start); // Розрахунок тривалості
+                string key;
+                int value;
+                cout << "Enter key:";
+                getline(cin, key);
+                cout << "Enter value:";
+                cin >> value;
+                cin.ignore(numeric_limits<streamsize>::max(), '\n');
 
-        cout << "Time taken for capacity " << capacity << ": " << duration.count() << " milliseconds" << endl;
+                hashTable.insert(key, value);
+                cout << "Element added successfully!" << endl;
+                break;
+            }
+            case 2:
+                cout << "\nAll data in hash table:" << endl;
+            hashTable.printAll();
+            break;
+            case 3: {
+                string key;
+                cout << "Enter key to search:";
+                getline(cin, key);
+                int value = hashTable.get(key);
+                if (value != -1) {
+                    cout << "Value: " << value << endl;
+                }
+                break;
+            }
+            case 4:
+                cout << "Exiting program. Bye!" << endl;
+            return 0;
+            default:
+                cout << "Invalid choice! Please enter a valid option." << endl;
+            break;
+        }
     }
 
-    return 0;
 }
-
-
-// int main() {
-//     int capacity;
-//     cout << "Enter capacity of hash table:";
-//     cin >> capacity;
-//     cin.ignore(numeric_limits<streamsize>::max(), '\n');
-//
-//     HashTable hashTable(capacity);
-//
-//     string key;
-//     int value;
-//
-//     while (true) {
-//         if (hashTable.getSize() >= capacity) {
-//             cout << "Hash table is full. Cannot add more elements." << endl;
-//             break;
-//         }
-//
-//         cout << "Enter key (type 'exit' to stop):";
-//         getline(cin, key);
-//         if (key == "exit") {
-//             break;
-//         }
-//
-//         cout << "Enter value:";
-//         cin >> value;
-//         cin.ignore(numeric_limits<streamsize>::max(), '\n');
-//
-//         hashTable.insert(key, value);
-//         cout << "Remaining capacity: " << capacity - hashTable.getSize() << endl;
-//     }
-//
-//     cout << "All data in hash table:" << endl;
-//     hashTable.printAll();
-//
-//     return 0;
-// }
