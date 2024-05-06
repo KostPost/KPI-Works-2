@@ -20,8 +20,8 @@ class Program
         Console.WriteLine("\nLongest line:");
         Console.WriteLine(textContainer.GetLongestLine());
 
-        Console.WriteLine("\nText after removing lines containing 'he':");
-        textContainer.RemoveLinesContaining("The");
+        Console.WriteLine("\nText after removing lines containing 'the':");
+        textContainer.RemoveLinesContaining("he");
         Console.WriteLine(textContainer);
 
         Console.WriteLine("\nText after clearing:");

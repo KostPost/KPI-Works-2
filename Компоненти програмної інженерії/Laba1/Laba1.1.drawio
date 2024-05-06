@@ -1,68 +1,206 @@
-<mxfile host="Electron" modified="2024-04-25T15:39:33.894Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="f5GJYx1--D1aEoQlHHap" version="24.2.5" type="device">
+<mxfile host="Electron" modified="2024-05-06T10:44:38.510Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="3UHm0Av0e8g5NNLhg-qn" version="24.2.5" type="device">
   <diagram name="Page-1" id="33ABCvUxAgY6Np4s8x4C">
-    <mxGraphModel dx="1218" dy="693" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1719" dy="978" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqLPrjoDDbuRUf4jC1n2-1" target="JqLPrjoDDbuRUf4jC1n2-5">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JqLPrjoDDbuRUf4jC1n2-1" target="JqLPrjoDDbuRUf4jC1n2-5" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-1" value="Користувач" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-1" value="Користувач" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="130" y="335" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqLPrjoDDbuRUf4jC1n2-5" target="JqLPrjoDDbuRUf4jC1n2-7">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JqLPrjoDDbuRUf4jC1n2-5" target="JqLPrjoDDbuRUf4jC1n2-7" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-5" value="Клієнт обирає фільм та дату&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-5" value="Клієнт обирає фільм та дату&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="330" width="102.5" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="JqLPrjoDDbuRUf4jC1n2-7" target="JqLPrjoDDbuRUf4jC1n2-12">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="JqLPrjoDDbuRUf4jC1n2-7" target="JqLPrjoDDbuRUf4jC1n2-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-7" value="Система відображає доступні сенси&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-7" value="Система відображає доступні сенси&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="370" y="330" width="110" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqLPrjoDDbuRUf4jC1n2-12" target="JqLPrjoDDbuRUf4jC1n2-19">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JqLPrjoDDbuRUf4jC1n2-12" target="JqLPrjoDDbuRUf4jC1n2-19" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-12" value="Клієнт вибирає місце для бронювання" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-12" value="Клієнт вибирає місце для бронювання" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="330" width="110" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqLPrjoDDbuRUf4jC1n2-19" target="JqLPrjoDDbuRUf4jC1n2-22">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JqLPrjoDDbuRUf4jC1n2-19" target="JqLPrjoDDbuRUf4jC1n2-22" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-19" value="Клієнт вводить свої контактні дані та оплату" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-19" value="Клієнт вводить свої контактні дані та оплату" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="670" y="330" width="110" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-22" value="Система підтверджує бронювання та відправляє клієнту квитки електронною поштою або через мобільний додаток." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-22" value="Система підтверджує бронювання та відправляє клієнту квитки електронною поштою або через мобільний додаток." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="830" y="305" width="180" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqLPrjoDDbuRUf4jC1n2-24" target="JqLPrjoDDbuRUf4jC1n2-27">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JqLPrjoDDbuRUf4jC1n2-24" target="JqLPrjoDDbuRUf4jC1n2-27" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-24" value="Адміністратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-24" value="Адміністратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
           <mxGeometry x="130" y="535" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqLPrjoDDbuRUf4jC1n2-27" target="JqLPrjoDDbuRUf4jC1n2-30">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JqLPrjoDDbuRUf4jC1n2-27" target="JqLPrjoDDbuRUf4jC1n2-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-27" value="Адміністратор вибирає опцію додавання нового сеансу в системі" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-27" value="Адміністратор вибирає опцію додавання нового сеансу в системі" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="220" y="525" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqLPrjoDDbuRUf4jC1n2-30" target="JqLPrjoDDbuRUf4jC1n2-32">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JqLPrjoDDbuRUf4jC1n2-30" target="JqLPrjoDDbuRUf4jC1n2-32" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-30" value="Вводить інформацію про фільм, дату, чат та зал показу" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-30" value="Вводить інформацію про фільм, дату, чат та зал показу" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="380" y="525" width="120" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-31" value="Система зберігає інформацію про сеанс та автоматично оновлює розклад на сайті кінотеатру." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-31" value="Система зберігає інформацію про сеанс та автоматично оновлює розклад на сайті кінотеатру." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="800" y="506.25" width="200" height="117.5" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="JqLPrjoDDbuRUf4jC1n2-32" target="JqLPrjoDDbuRUf4jC1n2-31">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="JqLPrjoDDbuRUf4jC1n2-32" target="JqLPrjoDDbuRUf4jC1n2-31" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="JqLPrjoDDbuRUf4jC1n2-32" value="Розширення: Конфлікт часу: Якщо обраний час для сеансу перетинається з іншим вже існуючим сеансом у тому ж залі, система попереджає адміністратора та пропонує вибрати інший час." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="JqLPrjoDDbuRUf4jC1n2-32" value="Розширення: Конфлікт часу: Якщо обраний час для сеансу перетинається з іншим вже існуючим сеансом у тому ж залі, система попереджає адміністратора та пропонує вибрати інший час." style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="540" y="486.25" width="220" height="157.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-2" value="Користувач" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="425" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-3" value="СИстема" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="1870" y="425" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-4" value="Клієнт обирає фільм та дату&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1464.38" y="200" width="217.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-5" value="Система відображає доступні сенси&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1464.38" y="310" width="217.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-6" value="Клієнт вибирає місце для бронювання" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1430" y="420" width="227.49" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-7" value="Клієнт вводить свої контактні дані та оплату" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1560" y="510" width="200" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-8" value="Система підтверджує бронювання та відправляє клієнту квитки електронною поштою або через мобільний додаток." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1490" y="610" width="250" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1310" y="440" as="sourcePoint" />
+            <mxPoint x="1360" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-11" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1680" y="240" as="sourcePoint" />
+            <mxPoint x="1730" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-12" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1880" y="460" as="sourcePoint" />
+            <mxPoint x="1930" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-13" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1460" y="350" as="sourcePoint" />
+            <mxPoint x="1510" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-14" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1310" y="470" as="sourcePoint" />
+            <mxPoint x="1360" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1650" y="460" as="sourcePoint" />
+            <mxPoint x="1700" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-16" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1760" y="540" as="sourcePoint" />
+            <mxPoint x="1810" y="490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-17" value="" style="endArrow=classic;html=1;rounded=0;entryX=1.004;entryY=0.578;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1870" y="480" as="sourcePoint" />
+            <mxPoint x="1920" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-18" value="Адміністратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="930" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-19" value="Система" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="770" y="930" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-20" value="Адміністратор вибирає опцію додавання нового сеансу в системі" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="700" width="185" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-21" value="Вводить інформацію про фільм, дату, чат та зал показу" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="940" width="207.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-22" value="Система дає інформацію про сеанси та зали" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="367.5" y="810" width="190" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-24" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Розширення: Конфлікт часу: Якщо обраний час для сеансу перетинається з іншим вже існуючим сеансом у тому ж залі, система попереджає адміністратора та пропонує вибрати інший час.&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="960" width="190" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-25" value="Система зберігає інформацію про сеанс та автоматично оновлює розклад на сайті кінотеатру." style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="1230" width="200" height="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-27" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-20">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="930" as="sourcePoint" />
+            <mxPoint x="190" y="880" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-28" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=0.1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="740" as="sourcePoint" />
+            <mxPoint x="610" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-29" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="950" as="sourcePoint" />
+            <mxPoint x="820" y="900" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-30" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.3333333333333333;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-18">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="850" as="sourcePoint" />
+            <mxPoint x="410" y="800" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="960" as="sourcePoint" />
+            <mxPoint x="210" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-32" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="cEN0L8TBnhelIiPNM3Ot-21" target="cEN0L8TBnhelIiPNM3Ot-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="490" y="960" as="sourcePoint" />
+            <mxPoint x="540" y="910" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-34" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="770" y="990" as="sourcePoint" />
+            <mxPoint x="560" y="1310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cEN0L8TBnhelIiPNM3Ot-35" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="cEN0L8TBnhelIiPNM3Ot-19">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="1050" as="sourcePoint" />
+            <mxPoint x="740" y="1000" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>

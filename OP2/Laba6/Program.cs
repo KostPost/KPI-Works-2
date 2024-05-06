@@ -1,29 +1,26 @@
 ﻿using Laba6;
 
+namespace Laba6;
+
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        // Create an array of Expression objects with example values
-        Expression[] expressions = new Expression[]
-        {
-            new Expression(1, 2, 3), // Make sure 2*c - a is positive
-            new Expression(1, 3, 1), // Likewise
-            new Expression(1, 4, 0)
-            // ... Add more expressions with different values if needed
-        };
+        Expression[] expressions = new Expression[3];
+        expressions[0] = new Expression(1, 5, 3, 2);
+        expressions[1] = new Expression(2, 4, 2, 1);
+        expressions[2] = new Expression(3, 7, 1, 4);
 
-        // Compute and print the result for each expression
-        for (int i = 0; i < expressions.Length; i++)
+        foreach (Expression expr in expressions)
         {
-            double result = expressions[i].Compute();
-            if (!double.IsNaN(result))
+            try
             {
-                Console.WriteLine($"Expression {i+1} result: {result}\n");
+                double result = expr.Evaluate();
+                Console.WriteLine("Result of the expression: " + result);
             }
-            else
+            catch (Exception e)
             {
-                Console.WriteLine($"Expression {i+1} could not be computed due to an error.\n");
+                Console.WriteLine("Error in expression evaluation: " + e.Message);
             }
         }
     }

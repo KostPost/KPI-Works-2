@@ -30,6 +30,27 @@ public class UtilityExpenses
 
     public DateTime UtilityExpensesMonth { get; set; }
     
+    private static decimal PromptForDecimal(string costName)
+    {
+        decimal cost;
+        Console.Write($"{costName}: ");
+        while (!decimal.TryParse(Console.ReadLine(), out cost) || cost < 0)
+        {
+            Console.WriteLine($"Invalid input. Please enter a valid {costName.ToLower()}:");
+        }
+        return cost;
+    }
+
+    private static DateTime PromptForMonthYear()
+    {
+        DateTime date;
+        while (!DateTime.TryParseExact(Console.ReadLine(), "MM/yyyy", CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out date))
+        {
+            Console.WriteLine("Invalid input. Please enter the month and year in the format MM/yyyy:");
+        }
+        return date;
+    }
+    
     public static void ViewUtilityExpensesForMonth(Apartment currentApartment)
     {
         DateTime rentTermStart = currentApartment.RentTermStart;
@@ -132,24 +153,5 @@ public class UtilityExpenses
     }
     
 
-    public static decimal PromptForDecimal(string costName)
-    {
-        decimal cost;
-        Console.Write($"{costName}: ");
-        while (!decimal.TryParse(Console.ReadLine(), out cost) || cost < 0)
-        {
-            Console.WriteLine($"Invalid input. Please enter a valid {costName.ToLower()}:");
-        }
-        return cost;
-    }
 
-    private static DateTime PromptForMonthYear()
-    {
-        DateTime date;
-        while (!DateTime.TryParseExact(Console.ReadLine(), "MM/yyyy", CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out date))
-        {
-            Console.WriteLine("Invalid input. Please enter the month and year in the format MM/yyyy:");
-        }
-        return date;
-    }
 }

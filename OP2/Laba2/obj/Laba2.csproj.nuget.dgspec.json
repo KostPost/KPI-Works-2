@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\Laba2.csproj": {}
+    "P:\\KPI-Works 2\\OP2\\Laba2\\Laba2.csproj": {}
   },
   "projects": {
-    "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\Laba2.csproj": {
+    "P:\\KPI-Works 2\\OP2\\Laba2\\Laba2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\Laba2.csproj",
+        "projectUniqueName": "P:\\KPI-Works 2\\OP2\\Laba2\\Laba2.csproj",
         "projectName": "Laba2",
-        "projectPath": "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\Laba2.csproj",
+        "projectPath": "P:\\KPI-Works 2\\OP2\\Laba2\\Laba2.csproj",
         "packagesPath": "C:\\Users\\KostPost\\.nuget\\packages\\",
-        "outputPath": "P:\\Proga\\KPI-Works 2\\OP2\\Laba2\\obj\\",
+        "outputPath": "P:\\KPI-Works 2\\OP2\\Laba2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,11 +38,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {

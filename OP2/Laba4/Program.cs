@@ -1,19 +1,16 @@
 ﻿using Laba4;
 
 
-namespace Laba4
+namespace Laba4;
+
+class Program
 {
-    class Program
+    static void Main()
     {
-        static void Main()
-        {
-            DigitStringHolder digitString = new DigitStringHolder("123456789");
+        var trapezoid = new Trapezoid((1, 1), (4, 1), (5, 5), (2, 5));
 
-            Console.WriteLine("Original digit string: " + digitString);
-
-            Console.WriteLine("Length of digit string: " + digitString.GetLength());
-
-            Console.WriteLine("Reversed digit string: " + digitString.ReverseDigits());
-        }
+        Console.WriteLine(trapezoid);
+        Console.WriteLine("Area: " + trapezoid.Area());
+        Console.WriteLine("Perimeter: " + trapezoid.Perimeter());
     }
 }

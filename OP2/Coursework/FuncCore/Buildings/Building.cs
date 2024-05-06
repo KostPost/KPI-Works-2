@@ -13,7 +13,7 @@ public class Building
     
     public List<Apartment> Apartments { get; set; } = new List<Apartment>();
     
-    private static long lastBuildingId = 0;
+    private static long _lastBuildingId = 0;
 
 
     public Building(string buildingName, long numberOfFloors)
@@ -24,7 +24,7 @@ public class Building
     }
     private static long GenerateBuildingId()
     {
-        return ++lastBuildingId;
+        return ++_lastBuildingId;
     }
     
     public bool AddApartment(Apartment newApartment)

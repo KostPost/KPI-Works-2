@@ -96,7 +96,7 @@ class Program
                             Console.WriteLine("1. Add apartment to the building");
                             Console.WriteLine("2. See all apartments in the building");
                             Console.WriteLine("3: Choose an apartment");
-                            Console.WriteLine("4. ");
+                            Console.WriteLine("4. Add a apartments fro the landlord");
                             Console.WriteLine("5. Exit");
                             action = Console.ReadLine()?.ToLower();
 

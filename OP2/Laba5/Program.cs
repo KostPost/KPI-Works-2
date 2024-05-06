@@ -1,17 +1,25 @@
-﻿namespace Laba5
-{
+﻿namespace Laba5;
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Figure[] figures = new Figure[2];
-            figures[0] = new Triangle(3, 4, 5);
-            figures[1] = new Circle(2);
+            // Створення об'єктів
+            Strings myString = new Strings("Hello World");
+            Strings upperString = new UpperCaseStrings("Hello World");
+            Strings lowerString = new LowerCaseStrings("Hello World");
 
-            foreach (Figure figure in figures)
-            {
-                Console.WriteLine($"Area: {figure.CalculateArea()}, Perimeter: {figure.CalculatePerimeter()}");
-            }
+            // Вивід довжини
+            Console.WriteLine("Length of myString: " + myString.Length());
+            Console.WriteLine("Length of upperString: " + upperString.Length());
+            Console.WriteLine("Length of lowerString: " + lowerString.Length());
+
+            // Вивід оброблених рядків
+            Console.WriteLine("Sorted myString:");
+            myString.SortAndPrint();
+            Console.WriteLine("Sorted upperString:");
+            upperString.SortAndPrint();
+            Console.WriteLine("Sorted lowerString:");
+            lowerString.SortAndPrint();
         }
     }
-}
+

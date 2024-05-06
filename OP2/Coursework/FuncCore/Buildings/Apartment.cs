@@ -15,15 +15,12 @@ public class Apartment
     public decimal CostPerSquareMeter { get; set; }
     public DateTime RentTermStart { get; set; }
     public DateTime RentTermEnd { get; set; }
-    public LandLord ApartmentOwner { get; set; } 
-    public List<Room> Rooms { get; set; } = new List<Room>();
-    public List<Tenant> Tenants { get; set; } = new List<Tenant>();
-    public List<UtilityExpenses> UtilityExpenses { get; set; } = new List<UtilityExpenses>();
-    public List<RepairExpense> RepairExpenses { get; set; } = new List<RepairExpense>();
-
-
+    public LandLord ApartmentOwner { get; set; }
+    public List<Room> Rooms { get; set; } //= new List<Room>();
+    public List<Tenant> Tenants { get; set; } // = new List<Tenant>();
+    public List<UtilityExpenses> UtilityExpenses { get; set; } //= new List<UtilityExpenses>();
+    public List<RepairExpense> RepairExpenses { get; set; } // = new List<RepairExpense>();
     public bool IsOccupied { get; set; }
-    
     
     public Apartment(int apartmentNumber, long roomCount, long floor, long buildingId, decimal costPerSquareMeter)
     {
@@ -33,15 +30,17 @@ public class Apartment
         BuildingId = buildingId;
         CostPerSquareMeter = costPerSquareMeter;
     }
+
     public void AddRepairExpense(decimal cost, string description)
     {
         RepairExpenses.Add(new RepairExpense { Cost = cost, Description = description, Date = DateTime.Now });
     }
+
     public void AddRoom(int roomNumber, double area)
     {
         Rooms.Add(new Room { RoomNumber = roomNumber, Area = area, ApartmentId = this.ApartmentNumber });
     }
-    
+
     public static Apartment? GetApartmentByNumber(int apartmentNumber, List<Apartment> apartments)
     {
         foreach (var apartment in apartments)
@@ -51,6 +50,7 @@ public class Apartment
                 return apartment;
             }
         }
+
         return null;
     }
 
@@ -61,15 +61,17 @@ public class Apartment
         {
             totalArea += room.Area;
         }
+
         return totalArea;
     }
-    public decimal CalculateRent( int month)
+
+    public decimal CalculateRent(int month)
     {
         double totalArea = CalculateTotalArea();
         decimal totalRent = CostPerSquareMeter * (decimal)totalArea * month;
         return totalRent;
     }
-    
+
 
     public void PrintApartmentDetails()
     {
@@ -109,12 +111,7 @@ public class Apartment
             Console.WriteLine($"Tenant Email: {tenant.Email}");
             Console.WriteLine($"Emergency Contact: {tenant.EmergencyContact}");
         }
+
         Console.WriteLine();
     }
-
-
-
-
-
 }
-
