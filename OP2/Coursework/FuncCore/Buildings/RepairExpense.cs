@@ -4,7 +4,6 @@ public class RepairExpense
 {
     public decimal Cost { get; set; }
     public string Description { get; set; }
-    public DateTime Date { get; set; }
     
     public static decimal CalculateAllRepairExpense(List<RepairExpense> repairExpenses)
     {

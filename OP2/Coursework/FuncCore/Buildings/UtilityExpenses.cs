@@ -87,7 +87,7 @@ public class UtilityExpenses
         }
     }
 
-    public static void AddUtilityExpensesForMonth(Apartment currentApartment)
+    public void AddUtilityExpensesForMonth(Apartment currentApartment)
     {
         DateTime rentTermStart = currentApartment.RentTermStart;
         DateTime rentTermEnd = currentApartment.RentTermEnd;
