@@ -9,7 +9,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b3b2efa-b17e-491f-9a3b-b4c88e525372" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FuncCore/Buildings/ApartmentInternal.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Laba3.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Laba3.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Laba6.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Laba6.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Laba8.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Laba8.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Algorithms/Laba8/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../Algorithms/Laba8/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Coursework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Coursework/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleCommander/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleCommander/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleCommander/bin/Debug/net8.0/ConsoleCommander.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleCommander/bin/Debug/net8.0/ConsoleCommander.dll" afterDir="false" />
@@ -27,10 +30,8 @@
       <change beforePath="$PROJECT_DIR$/ConsoleCommander/obj/Debug/net8.0/ref/ConsoleCommander.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleCommander/obj/Debug/net8.0/ref/ConsoleCommander.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ConsoleCommander/obj/Debug/net8.0/refint/ConsoleCommander.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ConsoleCommander/obj/Debug/net8.0/refint/ConsoleCommander.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FuncCore/Buildings/Apartment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/Buildings/Apartment.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FuncCore/Buildings/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/Buildings/Building.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FuncCore/Buildings/RepairExpense.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/Buildings/RepairExpense.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FuncCore/Buildings/ApartmentInternal.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/FuncCore/Buildings/UtilityExpenses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/Buildings/UtilityExpenses.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FuncCore/Persons/Landlord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/Persons/Landlord.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FuncCore/bin/Debug/net8.0/FuncCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/bin/Debug/net8.0/FuncCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FuncCore/bin/Debug/net8.0/FuncCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/bin/Debug/net8.0/FuncCore.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FuncCore/obj/Debug/net8.0/FuncCore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/obj/Debug/net8.0/FuncCore.AssemblyInfo.cs" afterDir="false" />
@@ -41,6 +42,8 @@
       <change beforePath="$PROJECT_DIR$/FuncCore/obj/Debug/net8.0/FuncCore.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/obj/Debug/net8.0/FuncCore.sourcelink.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FuncCore/obj/Debug/net8.0/ref/FuncCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/obj/Debug/net8.0/ref/FuncCore.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FuncCore/obj/Debug/net8.0/refint/FuncCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/FuncCore/obj/Debug/net8.0/refint/FuncCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Основи комп'ютерних систем/Laba5/laba1.pkt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Основи комп'ютерних систем/Laba5/laba1.pkt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Основи комп'ютерних систем/Laba5/laba2.pkt" beforeDir="false" afterPath="$PROJECT_DIR$/../../Основи комп'ютерних систем/Laba5/laba2.pkt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +56,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9f4b1f5d664afdfc80e1508ab7ed099dff210fbd/src/coreclr/System.Private.CoreLib/src/System/Type.CoreCLR.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9f4b1f5d664afdfc80e1508ab7ed099dff210fbd/src/libraries/System.Private.CoreLib/src/System/Collections/Generic/List.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/Symbols/src/dotnet/runtime/9f4b1f5d664afdfc80e1508ab7ed099dff210fbd/src/libraries/System.Private.CoreLib/src/System/Int32.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -69,35 +73,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.ConsoleCommander.executor": "Run",
-    ".NET Project.FuncCoreSuite.executor": "Run",
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.sourceCode.C#",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.ConsoleCommander.executor&quot;: &quot;Run&quot;,
+    &quot;.NET Project.FuncCoreSuite.executor&quot;: &quot;Run&quot;,
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "rider.external.source.directories": [
-      "C:\\Users\\KostPost\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\KostPost\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\KostPost\\AppData\\Local\\Symbols\\src"
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\KostPost\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\KostPost\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\KostPost\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Project.ConsoleCommander">
     <configuration name="ConsoleCommander" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -161,7 +165,9 @@
       <workItem from="1714681820359" duration="6576000" />
       <workItem from="1714990934234" duration="4000" />
       <workItem from="1715030873875" duration="45000" />
-      <workItem from="1715033649967" duration="6204000" />
+      <workItem from="1715033649967" duration="6877000" />
+      <workItem from="1715077379702" duration="1593000" />
+      <workItem from="1715100574391" duration="525000" />
     </task>
     <servers />
   </component>

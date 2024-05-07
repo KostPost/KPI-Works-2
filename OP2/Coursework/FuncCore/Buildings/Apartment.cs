@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Globalization;
 using FuncCore.Persons;
 using Npgsql.Internal;
 
@@ -17,15 +18,10 @@ public class Apartment
     public DateTime RentTermEnd { get; set; }
     public LandLord ApartmentOwner { get; set; }
     public List<Room> Rooms { get; set; } = new List<Room>();
-    public List<Tenant> Tenants { get; set; }  = new List<Tenant>();
+    public List<Tenant> Tenants { get; set; } = new List<Tenant>();
     public List<UtilityExpenses> UtilityExpenses { get; set; } = new List<UtilityExpenses>();
-    public List<RepairExpense> RepairExpenses { get; set; }  = new List<RepairExpense>();
+    public List<RepairExpense> RepairExpenses { get; set; } = new List<RepairExpense>();
     public bool IsOccupied { get; set; }
-
-    public Apartment()
-    {
-        
-    }
     
     public Apartment(int apartmentNumber, long roomCount, long floor, long buildingId, decimal costPerSquareMeter)
     {
@@ -36,66 +32,83 @@ public class Apartment
         CostPerSquareMeter = costPerSquareMeter;
     }
 
-    public void AddRepairExpense(decimal cost, string description)
-    {
-        RepairExpenses.Add(new RepairExpense { Cost = cost, Description = description});
-    }
-
     public void AddRoom()
     {
-        ApartmentInternal privateMethods = new ApartmentInternal(this);
-
-        Console.WriteLine("Enter room details:");
-        Console.WriteLine("Room number:");
-        int roomNumber;
-        while (!int.TryParse(Console.ReadLine(), out roomNumber))
+        try
         {
-            Console.WriteLine("Invalid input. Please enter a valid room number:");
-        }
+            Console.WriteLine("Enter room details:");
+        
+            int roomNumber;
+            Console.WriteLine("Room number:");
+            while (!int.TryParse(Console.ReadLine(), out roomNumber))
+            {
+                Console.WriteLine("Invalid input. Please enter a valid room number:");
+            }
 
-        Console.WriteLine("Area:");
-        double area;
-        while (!double.TryParse(Console.ReadLine(), out area))
+            double area;
+            Console.WriteLine("Area:");
+            while (!double.TryParse(Console.ReadLine(), out area))
+            {
+                Console.WriteLine("Invalid input. Please enter a valid area:");
+            }
+
+            AddRoom(roomNumber, area);
+
+            Console.WriteLine("Room added successfully to the apartment.");
+        }
+        catch (Exception ex)
         {
-            Console.WriteLine("Invalid input. Please enter a valid area:");
+            Console.WriteLine($"An error occurred: {ex.Message}");
         }
-
-        privateMethods.AddRoom(roomNumber, area);
-
-        Console.WriteLine("Room added successfully to the apartment.");
     }
-    
+
+
     public void UpdateCostPerSquareMeter()
     {
-        Console.WriteLine("Enter new cost per square meter:");
-        var newCostInput = Console.ReadLine();
-        if (decimal.TryParse(newCostInput, out decimal newCost))
+        try
         {
-            CostPerSquareMeter = newCost;
-            Console.WriteLine("Cost per square meter updated successfully.");
+            Console.WriteLine("Enter new cost per square meter:");
+            var newCostInput = Console.ReadLine();
+            if (decimal.TryParse(newCostInput, out decimal newCost))
+            {
+                CostPerSquareMeter = newCost;
+                Console.WriteLine("Cost per square meter updated successfully.");
+            }
+            else
+            {
+                throw new ArgumentException("Invalid input for cost per square meter.");
+            }
         }
-        else
+        catch (Exception ex)
         {
-            Console.WriteLine("Invalid input for cost per square meter.");
+            Console.WriteLine($"An error occurred: {ex.Message}");
         }
     }
-    
+
     public void AddTenant()
     {
-        Console.Write("Enter resident's name: ");
-        string? residentName = Console.ReadLine()?.Trim();
-        if (!string.IsNullOrWhiteSpace(residentName))
+        try
         {
-            Tenant newTenant = new Tenant { FullName = residentName };
-            Tenants.Add(newTenant);
-            Console.WriteLine($"Tenant '{residentName}' added to apartment {ApartmentNumber}.");
+            Console.Write("Enter resident's name: ");
+            string? residentName = Console.ReadLine()?.Trim();
+            if (!string.IsNullOrWhiteSpace(residentName))
+            {
+                Tenant newTenant = new Tenant { FullName = residentName };
+                Tenants.Add(newTenant);
+                Console.WriteLine($"Tenant '{residentName}' added to apartment {ApartmentNumber}.");
+            }
+            else
+            {
+                throw new ArgumentException("Resident's name cannot be empty.");
+            }
         }
-        else
+        catch (Exception ex)
         {
-            Console.WriteLine("Resident's name cannot be empty. Try again.");
+            Console.WriteLine($"An error occurred: {ex.Message}");
         }
-    }    
-    
+    }
+
+
     public void UpdateTenantInformation()
     {
         Console.WriteLine("List of current residents/tenants:");
@@ -130,7 +143,7 @@ public class Apartment
                 $"Resident/tenant '{residentNameToUpdate}' not found in the apartment.");
         }
     }
-    
+
     public void RemoveTenant()
     {
         Console.WriteLine("List of current residents/tenants:");
@@ -155,40 +168,81 @@ public class Apartment
             Console.WriteLine($"Resident/tenant '{residentNameToRemove}' not found in the apartment.");
         }
     }
-    
+
     public void AddUtilityExpensesAndCalculateRent()
     {
         if (!RentTermStart.Equals(DateTime.MinValue) && !RentTermEnd.Equals(DateTime.MinValue))
         {
             Console.WriteLine($"Current rent term: {RentTermStart:d} - {RentTermEnd:d}");
-            
+
             UtilityExpenses utilityExpenses = new UtilityExpenses();
-                    utilityExpenses.AddUtilityExpensesForMonth(this);
+            utilityExpenses.AddUtilityExpensesForMonth(this);
         }
         else
         {
             Console.WriteLine("Rent term not set for the current apartment.");
         }
     }
-    
-    
+
+
     public void UpdateRentTermDates()
     {
-        var apartmentInternal = new ApartmentInternal(this);
-        apartmentInternal.UpdateRentTermDates(this);
+        Console.Write("Enter the new rent start date (yyyy-MM-dd): ");
+        if (!TryParseDate(Console.ReadLine(), out DateTime newRentStartDate))
+        {
+            Console.WriteLine("Invalid date format. Please enter the date in yyyy-MM-dd format.");
+            return;
+        }
+
+        Console.Write("Enter the new rent end date (yyyy-MM-dd): ");
+        if (!TryParseDate(Console.ReadLine(), out DateTime newRentEndDate))
+        {
+            Console.WriteLine("Invalid date format. Please enter the date in yyyy-MM-dd format.");
+            return;
+        }
+
+        RentTermStart = newRentStartDate;
+        RentTermEnd = newRentEndDate;
+
+        Console.WriteLine("Rent start and end dates updated successfully.");
     }
-    
+
     public void AddRepairExpense()
     {
-        var apartmentInternal = new ApartmentInternal(this);
-        apartmentInternal.AddRepairExpense(this);
+        Console.Write("Enter the cost of repair: ");
+        decimal repairCost;
+        while (!decimal.TryParse(Console.ReadLine(), out repairCost) || repairCost < 0)
+        {
+            Console.WriteLine("Invalid input. Please enter a valid repair cost:");
+        }
+
+        string repairDescription;
+        do
+        {
+            Console.Write("Enter the description of repair: ");
+            repairDescription = Console.ReadLine();
+        } while (string.IsNullOrWhiteSpace(repairDescription));
+
+        RepairExpenses.Add(new RepairExpense { Cost = repairCost, Description = repairDescription });
+        Console.WriteLine("Repair expenses added successfully.");
     }
+
+
     public void ViewUtilityExpenses()
     {
-        var apartmentInternal = new ApartmentInternal(this);
-        apartmentInternal.ViewUtilityExpenses(this);
+        if (!RentTermStart.Equals(DateTime.MinValue) &&
+            !RentTermEnd.Equals(DateTime.MinValue))
+        {
+            Console.WriteLine($"Current rent term: {RentTermStart:d} - {RentTermEnd:d}");
+            UtilityExpenses utilityExpenses = new UtilityExpenses();
+            utilityExpenses.ViewUtilityExpensesForMonth(this);
+        }
+        else
+        {
+            Console.WriteLine("Rent term not set for the current apartment.");
+        }
     }
-    
+
     public void AddLandlord()
     {
         Console.Write("Enter landlord's name: ");
@@ -211,8 +265,8 @@ public class Apartment
             Console.WriteLine("Landlord's name cannot be empty. Try again.");
         }
     }
-    
-    
+
+
     public static Apartment? GetApartmentByNumber(List<Apartment> apartments)
     {
         Console.WriteLine("Enter the apartment number:");
@@ -226,26 +280,19 @@ public class Apartment
                     return apartment;
                 }
             }
+
             Console.WriteLine($"Apartment with number {apartmentNumber} not found.");
         }
         else
         {
             Console.WriteLine("Invalid apartment number input.");
         }
+
         return null;
     }
-    
 
-    public double CalculateTotalArea()
-    {
-        double totalArea = 0;
-        foreach (var room in Rooms)
-        {
-            totalArea += room.Area;
-        }
 
-        return totalArea;
-    }
+  
 
     public decimal CalculateRent(int month)
     {
@@ -261,7 +308,8 @@ public class Apartment
 
         for (int i = 0; i < RepairExpenses.Count; i++)
         {
-            Console.WriteLine($"{i + 1}. Description: {RepairExpenses[i].Description}, Cost: {RepairExpenses[i].Cost:C}");
+            Console.WriteLine(
+                $"{i + 1}. Description: {RepairExpenses[i].Description}, Cost: {RepairExpenses[i].Cost:C}");
         }
 
         Console.WriteLine("\nEnter the number of the repair expense to close:");
@@ -316,7 +364,31 @@ public class Apartment
             Console.WriteLine($"Tenant Email: {tenant.Email}");
             Console.WriteLine($"Emergency Contact: {tenant.EmergencyContact}");
         }
-
         Console.WriteLine();
     }
+    
+    
+    
+    
+    private double CalculateTotalArea()
+    {
+        double totalArea = 0;
+        foreach (var room in Rooms)
+        {
+            totalArea += room.Area;
+        }
+
+        return totalArea;
+    }
+    
+    private void AddRoom(int roomNumber, double area)
+    {
+        Rooms.Add(new Room { RoomNumber = roomNumber, Area = area, ApartmentId = ApartmentNumber });
+    }
+    private bool TryParseDate(string input, out DateTime result)
+    {
+        return DateTime.TryParseExact(input, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out result);
+    }
+
+
 }

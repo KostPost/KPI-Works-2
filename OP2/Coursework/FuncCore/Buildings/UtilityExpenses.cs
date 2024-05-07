@@ -51,7 +51,7 @@ public class UtilityExpenses
         return date;
     }
     
-    public static void ViewUtilityExpensesForMonth(Apartment currentApartment)
+    public void ViewUtilityExpensesForMonth(Apartment currentApartment)
     {
         DateTime rentTermStart = currentApartment.RentTermStart;
         DateTime rentTermEnd = currentApartment.RentTermEnd;

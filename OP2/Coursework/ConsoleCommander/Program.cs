@@ -1,6 +1,4 @@
-﻿using System.Globalization;
-using System.Runtime.CompilerServices;
-using FuncCore.Buildings;
+﻿using FuncCore.Buildings;
 using FuncCore.Persons;
 
 
@@ -39,19 +37,13 @@ class Program
                 case "2":
                 {
                     Building? currentBuilding = null;
+
                     do
                     {
                         currentBuilding = Building.FindBuildingByName(buildings);
 
-                        if (currentBuilding != null)
-                        {
-                            break;
-                        }
-
-                    } while (true);
-
-
-
+                    } while (currentBuilding == null);
+                    
                     if (currentBuilding != null)
                     {
                         string? action;
@@ -61,8 +53,7 @@ class Program
                             Console.WriteLine("1. Add apartment to the building");
                             Console.WriteLine("2. See all apartments in the building");
                             Console.WriteLine("3: Choose an apartment");
-                            Console.WriteLine("4. Calculate a total income from landlord's apartments");
-                            Console.WriteLine("5. Exit");
+                            Console.WriteLine("4. Exit");
                             action = Console.ReadLine()?.ToLower();
 
                             switch (action)
@@ -73,12 +64,11 @@ class Program
                                     break;
                                 }
 
-
                                 case "2":
-
+                                {
                                     currentBuilding.DisplayApartments();
-
                                     break;
+                                }
 
                                 case "3":
                                 {
@@ -143,7 +133,7 @@ class Program
                                                     {
                                                         Console.WriteLine("Choose an action - Apartment Management ");
                                                         Console.WriteLine("1. Register new tenants:\n" +
-                                                                          "2. Update resident information:\n" +
+                                                                          "2. Update tenant information:\n" +
                                                                           "3. See all tenants\n" +
                                                                           "4. Remove a tenants:\n");
                                                         actionChoice = Console.ReadLine();
@@ -184,7 +174,8 @@ class Program
                                                     case "3":
                                                     {
                                                         Console.WriteLine("Choose an action - Apartment Management ");
-                                                        Console.WriteLine("1. Add a Landlord\n");
+                                                        Console.WriteLine("1. Add a Landlord\n" +
+                                                                          "2. Calculate a total income from landlord's apartments");
                                                         actionChoice = Console.ReadLine();
 
                                                         switch (actionChoice)
@@ -192,6 +183,12 @@ class Program
                                                             case "1":
                                                             {
                                                                currentApartment.AddLandlord();
+                                                                break;
+                                                            }
+
+                                                            case "2":
+                                                            {
+                                                                LandLord.EnterLandlordNameAndGetApartments(currentBuilding);                                    
                                                                 break;
                                                             }
                                                         }
@@ -264,15 +261,9 @@ class Program
                                     break;
                                 }
 
+
+
                                 case "4":
-                                {
-                                    LandLord.EnterLandlordNameAndGetApartments(currentBuilding);                                    
-
-                                    break;
-                                }
-
-
-                                case "5":
                                     break;
                                 default:
                                     Console.WriteLine("\nInvalid action. Please try again.");
