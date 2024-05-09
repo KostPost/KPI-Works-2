@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ConsoleCommander/1.0.0": {
+        "dependencies": {
+          "FuncCore": "1.0.0"
+        },
+        "runtime": {
+          "ConsoleCommander.dll": {}
+        }
+      },
+      "FuncCore/1.0.0": {
+        "runtime": {
+          "FuncCore.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleCommander/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FuncCore/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

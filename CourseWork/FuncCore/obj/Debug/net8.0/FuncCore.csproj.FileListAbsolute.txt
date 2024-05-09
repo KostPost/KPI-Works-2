@@ -1,0 +1,12 @@
+P:\KPI-Works 2\CourseWork\FuncCore\bin\Debug\net8.0\FuncCore.deps.json
+P:\KPI-Works 2\CourseWork\FuncCore\bin\Debug\net8.0\FuncCore.dll
+P:\KPI-Works 2\CourseWork\FuncCore\bin\Debug\net8.0\FuncCore.pdb
+P:\KPI-Works 2\CourseWork\FuncCore\obj\Debug\net8.0\FuncCore.GeneratedMSBuildEditorConfig.editorconfig
+P:\KPI-Works 2\CourseWork\FuncCore\obj\Debug\net8.0\FuncCore.AssemblyInfoInputs.cache
+P:\KPI-Works 2\CourseWork\FuncCore\obj\Debug\net8.0\FuncCore.AssemblyInfo.cs
+P:\KPI-Works 2\CourseWork\FuncCore\obj\Debug\net8.0\FuncCore.csproj.CoreCompileInputs.cache
+P:\KPI-Works 2\CourseWork\FuncCore\obj\Debug\net8.0\FuncCore.sourcelink.json
+P:\KPI-Works 2\CourseWork\FuncCore\obj\Debug\net8.0\FuncCore.dll
+P:\KPI-Works 2\CourseWork\FuncCore\obj\Debug\net8.0\refint\FuncCore.dll
+P:\KPI-Works 2\CourseWork\FuncCore\obj\Debug\net8.0\FuncCore.pdb
+P:\KPI-Works 2\CourseWork\FuncCore\obj\Debug\net8.0\ref\FuncCore.dll

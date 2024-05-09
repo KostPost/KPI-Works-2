@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="515c8eb3-2185-448a-9e58-10e0c2b306ca" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FuncCore/Class1.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FuncCore/FuncCore.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OP2/Coursework/.$case diagram.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OP2/Coursework/.$classes.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OP2/Coursework/case diagram.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../OP2/Coursework/classes.drawio" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/.idea/.idea.Coursework/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/.idea/.idea.Coursework/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/.vs/slnx.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/.vs/slnx.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/ConsoleCommander.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/ConsoleCommander.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/ConsoleCommander.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/ConsoleCommander.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/ConsoleCommander.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/ConsoleCommander.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/FuncCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/FuncCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/FuncCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/bin/Debug/net8.0/FuncCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ConsoleCommander.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/apphost.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/apphost.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ref/ConsoleCommander.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/ref/ConsoleCommander.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/refint/ConsoleCommander.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ConsoleCommander/obj/Debug/net8.0/refint/ConsoleCommander.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Buildings/Apartment.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Buildings/Apartment.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Buildings/Building.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Buildings/Building.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Buildings/UtilityExpenses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Buildings/UtilityExpenses.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Persons/Landlord.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Persons/Landlord.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Persons/Resident.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Persons/Tenant.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/Persons/Tenant.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/bin/Debug/net8.0/FuncCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/bin/Debug/net8.0/FuncCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/bin/Debug/net8.0/FuncCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/bin/Debug/net8.0/FuncCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/FuncCore.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/ref/FuncCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/ref/FuncCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/refint/FuncCore.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/FuncCore/obj/Debug/net8.0/refint/FuncCore.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../OP2/Coursework/ІП-з31 Ткаченко Костянтин.docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../OP2/Coursework/ІП-з31 Ткаченко Костянтин.docx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2gEsItyNaW9rcumSbJn9GLaiQI7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\KostPost\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\KostPost\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\KostPost\\AppData\\Local\\Symbols\\src&quot;
+    ]
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="515c8eb3-2185-448a-9e58-10e0c2b306ca" name="Changes" comment="" />
+      <created>1715273994437</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715273994437</updated>
+      <workItem from="1715273995545" duration="9000" />
+      <workItem from="1715274027380" duration="203000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

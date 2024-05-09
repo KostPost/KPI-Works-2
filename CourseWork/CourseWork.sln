@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncCore", "FuncCore\FuncCore.csproj", "{7A46C82C-FEF0-444C-83FC-36C2A1DCD7D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleCommander", "ConsoleCommander\ConsoleCommander.csproj", "{9EAC3B17-F58E-4D9A-8449-414CB18F68AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A46C82C-FEF0-444C-83FC-36C2A1DCD7D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A46C82C-FEF0-444C-83FC-36C2A1DCD7D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A46C82C-FEF0-444C-83FC-36C2A1DCD7D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A46C82C-FEF0-444C-83FC-36C2A1DCD7D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EAC3B17-F58E-4D9A-8449-414CB18F68AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EAC3B17-F58E-4D9A-8449-414CB18F68AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EAC3B17-F58E-4D9A-8449-414CB18F68AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EAC3B17-F58E-4D9A-8449-414CB18F68AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
