@@ -48,40 +48,18 @@ public class BuildingInputUtils
         } while (true);
     }
 
-    public decimal PromptForDecimal(string message)
+    public double PromptForDouble(string message)
     {
-        decimal value;
+        double value;
         do
         {
             Console.Write(message);
             string input = Console.ReadLine();
-            if (decimal.TryParse(input, out value))
+            if (double.TryParse(input, out value))
                 return value;
             Console.WriteLine("Invalid input. Please enter a valid number.");
         } while (true);
     }
-    
-    public void InputApartmentDetails(ref Apartment apartment)
-    {
-        Console.WriteLine("Enter apartment details:");
-        apartment.ApartmentNumber = PromptForInt("Apartment Number: ");
-        apartment.RoomCount = PromptForLong("Room Count: ");
-        apartment.Floor = PromptForFloor("Floor: ");
-        apartment.CostPerSquareMeter = PromptForDecimal("Cost Per Square Meter: ");
-
-        Console.WriteLine("\nApartment details:");
-        Console.WriteLine($"Apartment Number: {apartment.ApartmentNumber}");
-        Console.WriteLine($"Room Count: {apartment.RoomCount}");
-        Console.WriteLine($"Floor: {apartment.Floor}");
-        Console.WriteLine($"Cost Per Square Meter: {apartment.CostPerSquareMeter}\n");
-    }
-
-    public string PromptConfirmation()
-    {
-        Console.WriteLine("Apartment data input successful.\nDo you want to save it? (yes/no/change)");
-        return Console.ReadLine()?.Trim().ToLower();
-    }
-
     public void ChangeApartmentDetail(ref Apartment apartment)
     {
         while (true)
@@ -101,7 +79,7 @@ public class BuildingInputUtils
                     apartment.Floor = PromptForFloor("New Floor: ");
                     return;
                 case "4":
-                    apartment.CostPerSquareMeter = PromptForDecimal("New Cost Per Square Meter: ");
+                    apartment.CostPerSquareMeter = PromptForDouble("New Cost Per Square Meter: ");
                     return;
                 default:
                     Console.WriteLine("Invalid option selected. Please select among the options (1-4).");

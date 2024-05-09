@@ -8,4 +8,6 @@ public class Room
     public double Area { get; set; }
 
     public long ApartmentId { get; set; }
+    
+    
 }

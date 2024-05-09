@@ -20,6 +20,101 @@ public class Building
         LandLords = new List<LandLord>();
     }
     
+    public void CalculateLandlordIncome()
+    {
+        Console.WriteLine("Enter Landlord's name:");
+        string landlordName = Console.ReadLine()?.Trim();
+
+        var landLord = LandLords.FirstOrDefault(ll => ll.FullName.Equals(landlordName, StringComparison.OrdinalIgnoreCase));
+
+        if (landLord == null)
+        {
+            Console.WriteLine($"No landlord found with the name '{landlordName}'.");
+            return;
+        }
+
+        Console.WriteLine("Enter the start date for rent calculation (format: yyyy-mm-dd):");
+        if (!DateTime.TryParse(Console.ReadLine(), out DateTime globalStartDate))
+        {
+            Console.WriteLine("Invalid start date entered. Try again.");
+            return;
+        }
+
+        Console.WriteLine("Enter the end date for rent calculation (format: yyyy-mm-dd):");
+        if (!DateTime.TryParse(Console.ReadLine(), out DateTime globalEndDate))
+        {
+            Console.WriteLine("Invalid end date entered. Try again.");
+            return;
+        }
+
+        if (globalEndDate < globalStartDate)
+        {
+            Console.WriteLine("End date must be after start date.");
+            return;
+        }
+
+        double totalIncome = 0;
+
+        foreach (var apartment in landLord.OwnedApartments)
+        {
+            DateTime apartmentStartDate = (apartment.RentTermStart > globalStartDate) ? apartment.RentTermStart : globalStartDate;
+            DateTime apartmentEndDate = (apartment.RentTermEnd < globalEndDate) ? apartment.RentTermEnd : globalEndDate;
+
+            if (apartmentStartDate > apartmentEndDate)
+            {
+                continue;
+            }
+
+            int months = 0;
+            while (apartmentStartDate.AddMonths(months) < apartmentEndDate)
+            {
+                months++;
+            }
+
+            double apartmentArea = apartment.Rooms.Sum(room => room.Area);
+            totalIncome += apartmentArea * apartment.CostPerSquareMeter * months;
+        }
+
+        Console.WriteLine($"Total income from {landlordName}'s apartments between {globalStartDate.ToShortDateString()} and {globalEndDate.ToShortDateString()} is: {totalIncome}");
+    }
+
+    public void FindAllInfoAboutLandLord()
+    {
+        Console.WriteLine("Enter Landlord's name:");
+        string landlordName = Console.ReadLine();
+
+        var landLord = LandLords.FirstOrDefault(ll => ll.FullName.Equals(landlordName, StringComparison.OrdinalIgnoreCase));
+
+        if (landLord == null)
+        {
+            Console.WriteLine($"No landlord found with the name '{landlordName}'.");
+        }
+        else
+        {
+            Console.WriteLine($"Landlord Name: {landLord.FullName}, Owned Apartments: {landLord.OwnedApartments.Count}");
+
+            foreach (var apartment in landLord.OwnedApartments)
+            {
+                Console.WriteLine($"Apartment Info:");
+                apartment.PrintApartmentDetails();
+            }
+        }
+    }
+    public void PrintAllLandLords()
+    {
+        if(LandLords.Count > 0)
+        {
+            foreach(var landLord in LandLords)
+            {
+                Console.WriteLine($"LandLord Name: {landLord.FullName}, Owned Apartments: {landLord.OwnedApartments.Count}");
+            }
+        }
+        else
+        {
+            Console.WriteLine("No landlords present in the building.");
+        }
+    }
+    
     public void AddApartment()
     {
         Apartment newApartment = new Apartment();
@@ -36,7 +131,7 @@ public class Building
             
             newApartment.RoomCount = _inputUtils.PromptForLong("Room Count: ");
             newApartment.Floor = _inputUtils.PromptForFloor("Floor: ");
-            newApartment.CostPerSquareMeter = _inputUtils.PromptForDecimal("Cost Per Square Meter: ");
+            newApartment.CostPerSquareMeter = _inputUtils.PromptForDouble("Cost Per Square Meter: ");
 
            
 

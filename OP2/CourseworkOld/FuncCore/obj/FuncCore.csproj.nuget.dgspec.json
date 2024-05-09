@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj": {}
+    "P:\\KPI-Works 2\\OP2\\CourseworkOld\\FuncCore\\FuncCore.csproj": {}
   },
   "projects": {
-    "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj": {
+    "P:\\KPI-Works 2\\OP2\\CourseworkOld\\FuncCore\\FuncCore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj",
+        "projectUniqueName": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\FuncCore\\FuncCore.csproj",
         "projectName": "FuncCore",
-        "projectPath": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj",
+        "projectPath": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\FuncCore\\FuncCore.csproj",
         "packagesPath": "C:\\Users\\KostPost\\.nuget\\packages\\",
-        "outputPath": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\obj\\",
+        "outputPath": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\FuncCore\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -38,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

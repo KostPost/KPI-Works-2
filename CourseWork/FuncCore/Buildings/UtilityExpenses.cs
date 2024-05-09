@@ -1,4 +1,6 @@
-﻿namespace FuncCore;
+﻿using System.Globalization;
+
+namespace FuncCore;
 
 public class UtilityExpense
 {
@@ -26,6 +28,48 @@ public class UtilityExpense
 
     public DateTime UtilityExpensesMonth { get; set; }
 
+    public static void AddUtilityCosts(Apartment apartment)
+    {
+        var expense = new UtilityExpense();
+        
+        Console.WriteLine("Enter the month for which to add utility costs (Format: MM-YYYY):");
+        expense.UtilityExpensesMonth = DateTime.ParseExact(Console.ReadLine(), "MM-yyyy", CultureInfo.InvariantCulture);
+
+        Console.WriteLine("Enter the rent cost:");
+        expense.RentCost = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the heating cost:");
+        expense.HeatingCost = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the water cost:");
+        expense.WaterCost = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the electricity cost:");
+        expense.ElectricityCost = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the gas cost:");
+        expense.GasCost = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the cleaning cost:");
+        expense.CleaningCost = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the management cost:");
+        expense.ManagementCost = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the trash removal cost:");
+        expense.TrashRemovalCost = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("Enter the internet, TV, and phone cost:");
+        expense.InternetTvPhoneCost = decimal.Parse(Console.ReadLine());
+
+        expense.AllUtilityExpenses = expense.HeatingCost + expense.WaterCost + expense.ElectricityCost + expense.GasCost + 
+                                     expense.CleaningCost + expense.ManagementCost + expense.TrashRemovalCost + expense.InternetTvPhoneCost;
+
+        Console.WriteLine("Utility expenses added successfully for month: " + expense.UtilityExpensesMonth.ToString("MM-yyyy"));
+
+        
+        apartment.UtilityExpenses.Add(expense);
+    }
     public static void PrintUtilityExpenses(List<UtilityExpense> utilityExpenses)    
     {
         if (utilityExpenses?.Any() == true)

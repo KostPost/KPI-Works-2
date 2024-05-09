@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "k2YKyatXlFjJxm+NjmCr/RKW2HCLhq27ERixyd3LwM2cTbetmv9vThSPrlV70Sa4tYVhURFuhR9YbQK/jrknVQ==",
+  "dgSpecHash": "LoYbER4uOzHua2EAXC/xd9h03zbFWHYiKkNW9aI721ngw9h0MeyMAQyfT4GkumRwkgCh5YL7bJDQXpTIpJ7oWw==",
   "success": true,
-  "projectFilePath": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\FuncCore.csproj",
+  "projectFilePath": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\FuncCore\\FuncCore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\KostPost\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\KostPost\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

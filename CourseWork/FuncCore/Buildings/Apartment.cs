@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 using FuncCore.Persons;
 
 namespace FuncCore;
@@ -9,10 +10,10 @@ public class Apartment
     public long RoomCount { get; set; }
     public long Floor { get; set; }
     public long BuildingId { get; set; }
-    public decimal CostPerSquareMeter { get; set; }
+    public double CostPerSquareMeter { get; set; }
     public DateTime RentTermStart { get; set; }
     public DateTime RentTermEnd { get; set; }
-    public LandLord LandLord { get; set; }
+    public LandLord? LandLord { get; set; }
     public List<Room> Rooms { get; set; } 
     public List<Tenant> Tenants { get; set; } 
     public List<UtilityExpense> UtilityExpenses { get; set; } 
@@ -21,155 +22,93 @@ public class Apartment
 
     public Apartment()
     {
+        LandLord = null;
         Rooms = new List<Room>();
         Tenants = new List<Tenant>();
         UtilityExpenses = new List<UtilityExpense>();
         RepairExpenses = new List<RepairExpense>();
     }
-    
-    public void AddLandlord()
+
+   
+
+    public void AddRepairExpense()
     {
-        Console.WriteLine("Enter the full name of the landlord to add:");
-        var landlordName = Console.ReadLine();
-        
-        Landlords.Add(new Landlord { FullName = landlordName });
-        Console.WriteLine("Landlord added successfully.");
+       RepairExpense.AddRepairExpense(this);
     }
 
-    public void RemoveLandlord()
+    public void CloseRepairExpense()
     {
-        Console.WriteLine("Enter the full name of the landlord to remove:");
-        var landlordName = Console.ReadLine();
-        
-        var landlord = Landlords.FirstOrDefault(l => l.FullName == landlordName);
-        if (landlord == null)
+        RepairExpense.CloseRepairExpense(this);
+    }
+
+    public void PrintRepairExpenses()
+    {
+        RepairExpense.PrintRepairExpenses(RepairExpenses);
+    }
+    public void UpdateRentDate()
+    {
+        Console.WriteLine("Enter the new Rent Term Start Date (Format: dd-MM-yyyy):");
+        string inputStartDate = Console.ReadLine();
+
+        if (!DateTime.TryParseExact(inputStartDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime newRentStartDate))
         {
-            Console.WriteLine("Landlord not found.");
+            Console.WriteLine("Invalid start date format. Please enter a valid date in the format dd-MM-yyyy.");
             return;
         }
 
-        Landlords.Remove(landlord);
-        Console.WriteLine("Landlord removed successfully.");
+        Console.WriteLine("Enter the new Rent Term End Date (Format: dd-MM-yyyy):");
+        string inputEndDate = Console.ReadLine();
+
+        if (!DateTime.TryParseExact(inputEndDate, "dd-MM-yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime newRentEndDate))
+        {
+            Console.WriteLine("Invalid end date format. Please enter a valid date in the format dd-MM-yyyy.");
+            return;
+        }
+
+        RentTermStart = newRentStartDate;
+        RentTermEnd = newRentEndDate;
+        Console.WriteLine("Rent dates updated successfully.");
+    }
+    public void CalculateRentForPeriod()
+    {
+        Console.WriteLine("Enter the start date of the rent period (Format: dd-MM-yyyy):");
+        DateTime startPeriod = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy", CultureInfo.InvariantCulture);
+
+        Console.WriteLine("Enter the end date of the rent period (Format: dd-MM-yyyy):");
+        DateTime endPeriod = DateTime.ParseExact(Console.ReadLine(), "dd-MM-yyyy", CultureInfo.InvariantCulture);
+
+        double totalRent = CalculateRentForPeriod(startPeriod, endPeriod);
+
+        Console.WriteLine($"The total rent for the period from {startPeriod:dd-MM-yyyy} to {endPeriod:dd-MM-yyyy} is: {totalRent:C}");
+    }
+    public void AddUtilityCosts()
+    {
+        UtilityExpense.AddUtilityCosts(this);
+
+    }
+    public void AddLandlordToApartment(Building building)
+    {
+        LandLord.AddLandlordToApartment(this,LandLord, building);
+    }
+    public void RemoveLandlordFromApartment(Building building)
+    {
+        LandLord.RemoveLandlordFromApartment(this, LandLord,building);
     }
     public void RemoveTenant()
     {
-        Console.WriteLine("Enter the full name of the tenant to be removed:");
-        var tenantName = Console.ReadLine();
-        
-        var tenant = Tenants.FirstOrDefault(t => t.FullName == tenantName);
-        if (tenant == null)
-        {
-            Console.WriteLine("Tenant not found.");
-            return;
-        }
-
-        Tenants.Remove(tenant);
-        Console.WriteLine("Tenant removed successfully.");
+        Tenant.RemoveTenantFromApartment(this);
     }
     public void DisplayAllTenants()
     {
-        if(Tenants.Count == 0 || !Tenants.Any())
-        {
-            Console.WriteLine("No tenants found.");
-            return;
-        }
-
-        Console.WriteLine("All the tenants:");
-        foreach (var tenant in Tenants)
-        {
-            Console.WriteLine("-----------");
-            Console.WriteLine($"Full Name: {tenant.FullName}");
-            Console.WriteLine($"Age: {tenant.Age}");
-            Console.WriteLine($"Phone Number: {tenant.PhoneNumber}");
-            Console.WriteLine($"Email: {tenant.Email}");
-            Console.WriteLine($"Emergency Contact: {tenant.EmergencyContact}");
-            Console.WriteLine($"Apartment Number: {tenant.ApartmentNumber}\n");
-            Console.WriteLine("-----------");
-
-        }
+       Tenant.DisplayAllTenants(this);
     }
     public void UpdateTenantInformation()
     {
-        Console.WriteLine("Enter the tenant's full name you want to update:");
-        var tenantFullName = Console.ReadLine();
-        
-        var tenant = Tenants.FirstOrDefault(t => t.FullName == tenantFullName);
-        if (tenant == null)
-        {
-            Console.WriteLine("Tenant not found.");
-            return;
-        }
-
-        Console.WriteLine($"\nCurrent Information:\nFull Name: {tenant.FullName}\nAge: {tenant.Age}\nPhone Number: " +
-                          $"{tenant.PhoneNumber}\nEmail: {tenant.Email}\nEmergency Contact: {tenant.EmergencyContact}\n" +
-                          $"Apartment Number: {tenant.ApartmentNumber}\n");
-
-        Console.WriteLine("Enter new details (press enter to skip):");
-
-        Console.Write("Full Name: ");
-        var newName = Console.ReadLine();
-        if (!string.IsNullOrEmpty(newName))
-        {
-            tenant.FullName = newName;
-        }
-
-        Console.Write("Age: ");
-        if (long.TryParse(Console.ReadLine(), out long newAge))
-        {
-            tenant.Age = newAge;
-        }
-
-        Console.Write("Phone Number: ");
-        var newPhoneNumber = Console.ReadLine();
-        if (!string.IsNullOrEmpty(newPhoneNumber))
-        {
-            tenant.PhoneNumber = newPhoneNumber;
-        }
-
-        Console.Write("Email: ");
-        var newEmail = Console.ReadLine();
-        if (!string.IsNullOrEmpty(newEmail))
-        {
-            tenant.Email = newEmail;
-        }
-        
-        Console.Write("Emergency Contact: ");
-        var newEmergencyContact = Console.ReadLine();
-        if (!string.IsNullOrEmpty(newEmergencyContact))
-        {
-            tenant.EmergencyContact = newEmergencyContact;
-        }
-
-        Console.Write("Apartment Number: ");
-        if (int.TryParse(Console.ReadLine(), out int newApartmentNumber))
-        {
-            tenant.ApartmentNumber = newApartmentNumber;
-        }
-
-        Console.WriteLine("Tenant information updated successfully.");
+        Tenant.UpdateTenantInformation(this);
     }
     public void RegisterNewTenant()
     {
-        Console.WriteLine("Enter tenant details:");
-
-        Console.Write("Name: ");
-        var tenantName = Console.ReadLine();
-
-        Console.Write("Age: ");
-        if (!int.TryParse(Console.ReadLine(), out int tenantAge))
-        {
-            Console.WriteLine("Invalid input! Please enter a numeric age.");
-            return;
-        }
-
-        var newTenant = new Tenant
-        {
-            FullName = tenantName,
-            Age = tenantAge,
-        };
-
-        Tenants.Add(newTenant);
-        Console.WriteLine("New tenant registered successfully.");
+        Tenant.RegisterNewTenant(this);
     }
     public void AddRoom()
     {
@@ -183,10 +122,7 @@ public class Apartment
             {
                 break;
             }
-            else
-            {
-                Console.WriteLine($"Invalid input. Please enter a valid room number not greater than {RoomCount}.");
-            }
+            
         }
 
         double roomArea;
@@ -196,10 +132,6 @@ public class Apartment
             if (double.TryParse(Console.ReadLine(), out roomArea))
             {
                 break;
-            }
-            else
-            {
-                Console.WriteLine("Invalid input. Please enter a valid room area.");
             }
         }
 
@@ -214,15 +146,15 @@ public class Apartment
     }
     public void UpdateCost()
     {
-        Console.WriteLine("Enter the new cost per one metr:");
-        if (decimal.TryParse(Console.ReadLine(), out decimal newCost))
+        Console.WriteLine("Enter the new cost per one meter:");
+        if (double.TryParse(Console.ReadLine(), out double newCost))
         {
             CostPerSquareMeter = newCost;
             Console.WriteLine("Cost updated successfully.");
         }
         else
         {
-            Console.WriteLine("Invalid input. Please enter a valid decimal number.");
+            Console.WriteLine("Invalid input. Please enter a valid floating point number.");
         }
     }
     
@@ -240,10 +172,10 @@ public class Apartment
         builder.AppendLine($"Rent Term End: {RentTermEnd:d}");
         builder.AppendLine($"Is Occupied: {IsOccupied}");
 
-        if (ApartmentOwner != null)
+        if (LandLord != null)
         {
             builder.AppendLine("Apartment Owner:");
-            builder.AppendLine($"  Name: {ApartmentOwner.FullName}");
+            builder.AppendLine($"  Name: {LandLord.FullName}\n");
         }
 
         if (Tenants?.Any() == true)
@@ -251,7 +183,7 @@ public class Apartment
             builder.AppendLine("Tenants:");
             foreach(var tenant in Tenants)
             {
-                builder.AppendLine($"  Name: {tenant.FullName}");
+                builder.AppendLine($"  Name: {tenant.FullName}\n");
             }
         }
 
@@ -286,10 +218,10 @@ public class Apartment
             builder.AppendLine($"Rent Term End: {apartment.RentTermEnd:d}");
             builder.AppendLine($"Is Occupied: {apartment.IsOccupied}");
 
-            if (apartment.ApartmentOwner != null)
+            if (apartment.LandLord != null)
             {
                 builder.AppendLine("Apartment Owner:");
-                builder.AppendLine($"  Name: {apartment.ApartmentOwner.FullName}");
+                builder.AppendLine($"  Name: {apartment.LandLord.FullName}");
             }
 
             if (apartment.Tenants?.Any() == true)
@@ -316,9 +248,16 @@ public class Apartment
         }
     }
     
-    
-    
+    private double CalculateRentForPeriod(DateTime startPeriod, DateTime endPeriod)
+    {
+        int monthsCount = ((endPeriod.Year - startPeriod.Year) * 12) + endPeriod.Month - startPeriod.Month;
 
-    
+        double totalRent = CalculateTotalArea() * (double)CostPerSquareMeter * monthsCount;
 
+        return totalRent;
+    }
+    private double CalculateTotalArea()
+    {
+        return Rooms.Sum(room => room.Area);
+    }
 }

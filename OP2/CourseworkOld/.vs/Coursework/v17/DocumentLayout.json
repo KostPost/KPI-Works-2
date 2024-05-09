@@ -1,38 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "P:\\KPI-Works 2\\OP2\\Coursework\\",
+  "WorkspaceRootPath": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ConsoleCommander\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\Building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FuncCore\\Buildings\\Building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Persons\\Tenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FuncCore\\Persons\\Tenant.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Persons\\Landlord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FuncCore\\Persons\\Landlord.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\Apartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FuncCore\\Buildings\\Apartment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\RepairExpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FuncCore\\Buildings\\RepairExpense.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\Room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FuncCore\\Buildings\\Room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\UtilityExpenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:FuncCore\\Buildings\\UtilityExpenses.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{86D06E95-3181-454E-9691-5FA8D54DE0A9}|ConsoleCommander\\ConsoleCommander.csproj|p:\\kpi-works 2\\op2\\courseworkold\\consolecommander\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86D06E95-3181-454E-9691-5FA8D54DE0A9}|ConsoleCommander\\ConsoleCommander.csproj|solutionrelative:consolecommander\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -48,104 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
-              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\Program.cs",
+              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\ConsoleCommander\\Program.cs",
               "RelativeDocumentMoniker": "ConsoleCommander\\Program.cs",
-              "ToolTip": "P:\\KPI-Works 2\\OP2\\Coursework\\ConsoleCommander\\Program.cs",
+              "ToolTip": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\ConsoleCommander\\Program.cs",
               "RelativeToolTip": "ConsoleCommander\\Program.cs",
-              "ViewState": "AQIAAIMAAAAAAAAAAAAAALYAAABNAAAA",
+              "ViewState": "AQIAAP8AAAAAAAAAAAAAABUBAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-16T21:29:06.988Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Tenant.cs",
-              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Persons\\Tenant.cs",
-              "RelativeDocumentMoniker": "FuncCore\\Persons\\Tenant.cs",
-              "ToolTip": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Persons\\Tenant.cs",
-              "RelativeToolTip": "FuncCore\\Persons\\Tenant.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:16:14.024Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Landlord.cs",
-              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Persons\\Landlord.cs",
-              "RelativeDocumentMoniker": "FuncCore\\Persons\\Landlord.cs",
-              "ToolTip": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Persons\\Landlord.cs",
-              "RelativeToolTip": "FuncCore\\Persons\\Landlord.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:16:13.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UtilityExpenses.cs",
-              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\UtilityExpenses.cs",
-              "RelativeDocumentMoniker": "FuncCore\\Buildings\\UtilityExpenses.cs",
-              "ToolTip": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\UtilityExpenses.cs",
-              "RelativeToolTip": "FuncCore\\Buildings\\UtilityExpenses.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:15:24.813Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Room.cs",
-              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\Room.cs",
-              "RelativeDocumentMoniker": "FuncCore\\Buildings\\Room.cs",
-              "ToolTip": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\Room.cs",
-              "RelativeToolTip": "FuncCore\\Buildings\\Room.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:15:18.738Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RepairExpense.cs",
-              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\RepairExpense.cs",
-              "RelativeDocumentMoniker": "FuncCore\\Buildings\\RepairExpense.cs",
-              "ToolTip": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\RepairExpense.cs",
-              "RelativeToolTip": "FuncCore\\Buildings\\RepairExpense.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:15:13.288Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Building.cs",
-              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\Building.cs",
-              "RelativeDocumentMoniker": "FuncCore\\Buildings\\Building.cs",
-              "ToolTip": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\Building.cs",
-              "RelativeToolTip": "FuncCore\\Buildings\\Building.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAAwCwAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:15:06.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Apartment.cs",
-              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\Apartment.cs",
-              "RelativeDocumentMoniker": "FuncCore\\Buildings\\Apartment.cs",
-              "ToolTip": "P:\\KPI-Works 2\\OP2\\Coursework\\FuncCore\\Buildings\\Apartment.cs",
-              "RelativeToolTip": "FuncCore\\Buildings\\Apartment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-09T17:03:54.97Z",
+              "WhenOpened": "2024-05-09T20:42:19.179Z",
               "EditorCaption": ""
             }
           ]

@@ -1,4 +1,5 @@
-﻿using FuncCore;
+﻿using System.Globalization;
+using FuncCore;
 
 namespace ConsoleCommander;
 
@@ -92,7 +93,7 @@ class Program
                                                 do
                                                 {
                                                     Console.WriteLine("Choose an action - Apartment Management ");
-                                                    Console.WriteLine("1. Update cost per 1 square metr\n" +
+                                                    Console.WriteLine("1. Update cost per 1 square meter\n" +
                                                                       "2. Add a Room in Apartment\n" +
                                                                       "3. View apartment information\n" +
                                                                       "4. Exit");
@@ -191,7 +192,14 @@ class Program
                                                     {
                                                         case "1":
                                                         {
-                                                            
+                                                            currentApartment.AddLandlordToApartment(currentBuidling);   
+                                                            break;
+                                                        }
+
+                                                        case "2":
+                                                                
+                                                        {
+                                                            currentApartment.RemoveLandlordFromApartment(currentBuidling);
                                                             break;
                                                         }
                                                         
@@ -203,12 +211,122 @@ class Program
                                                 break;
                                             }
 
+                                            case "4":
+                                            {
+                                                bool workingInApartment = true;
+                                                do
+                                                {
+                                                    Console.WriteLine("Choose an action - Apartment Management ");
+                                                    Console.WriteLine("1. Add utility costs\n" + 
+                                                                      "2. See information about UtilityExpenses\n" +
+                                                                      "3. Calculate rent\n" +
+                                                                      "4. Update Rent Date:\n" +
+                                                                      "5. Add a repair expense:\n" +
+                                                                      "6. Close repair expense\n" +
+                                                                      "7. See repair expense\n" +
+                                                                      "8. Exit");
+                                                    actionApartment = Console.ReadLine();
+
+                                                    switch (actionApartment)
+                                                    {
+                                                        case "1":
+                                                        {
+                                                            currentApartment.AddUtilityCosts();
+                                                            break;
+                                                        }
+                                                        
+                                                        case "2":
+                                                        {
+                                                            UtilityExpense.PrintUtilityExpenses(currentApartment.UtilityExpenses);
+                                                            break;
+                                                        }
+                                                        
+                                                        case "3":
+                                                        {
+                                                            currentApartment.CalculateRentForPeriod();
+                                                            break;
+                                                        }
+
+                                                        case "4":
+                                                        {
+                                                            currentApartment.UpdateRentDate();
+                                                            break;
+                                                        }
+
+                                                        case "5":
+                                                        {
+                                                            currentApartment.AddRepairExpense();
+                                                            break;
+                                                        }
+
+                                                        case "6":
+                                                        {
+                                                            currentApartment.CloseRepairExpense();
+                                                            break;
+                                                        }
+
+                                                        case "7":
+                                                        {
+                                                            currentApartment.PrintRepairExpenses();
+                                                            break;
+                                                        }
+                                                        
+                                                        case "8":
+                                                            workingInApartment = false;
+                                                            break;
+                                                    }
+                                                } while (workingInApartment);
+
+                                                break;
+                                            }
+
                                             case "5":
                                                 workingApartment = false;
                                                 break;
                                         }
                                     } while (workingApartment);
                                 }
+
+                                break;
+                            }
+
+                            case "4":
+                            {
+                                bool workingLandLord = true;
+                                do
+                                {
+                                    Console.WriteLine("\nChoose an action - Apartment Management ");
+                                    Console.WriteLine("1. See all LandLords\n" +
+                                                      "2. See information about LandLord\n" +
+                                                      "3. Calculate a total income from landlord's apartments\n" +
+                                                      "4. Exit\n");
+                                    actionApartment = Console.ReadLine();
+
+                                    switch (actionApartment)
+                                    {
+                                        case "1":
+                                        {
+                                            currentBuidling.PrintAllLandLords();
+                                            break;
+                                        }
+
+                                        case "2":
+                                        {
+                                            currentBuidling.FindAllInfoAboutLandLord();
+                                            break;
+                                        }
+                                        case "3":
+                                        {
+                                            currentBuidling.CalculateLandlordIncome();
+                                            break;
+                                        }
+
+                                        case "4":
+                                            workingLandLord = false;
+                                            break;
+                                        
+                                    }
+                                } while (workingLandLord);
 
                                 break;
                             }
