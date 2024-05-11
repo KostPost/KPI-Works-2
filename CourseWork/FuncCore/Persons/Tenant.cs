@@ -4,58 +4,73 @@ public class Tenant
 {
     public string FullName { get; set; }
     public long Age { get; set; }
-    
+
     public string PhoneNumber { get; set; }
     public string Email { get; set; }
     public string EmergencyContact { get; set; }
     public int ApartmentNumber { get; set; }
-    
+
     public static void RegisterNewTenant(Apartment apartment)
     {
-        Console.WriteLine("Enter tenant details:");
-
-        Console.Write("Name: ");
-        var tenantName = Console.ReadLine();
-
-        Console.Write("Age: ");
-        if (!int.TryParse(Console.ReadLine(), out int tenantAge))
+        try
         {
-            Console.WriteLine("Invalid input! Please enter a numeric age.");
-            return;
+            Console.WriteLine("Enter tenant details:");
+
+            Console.Write("Name: ");
+            var tenantName = Console.ReadLine();
+
+            Console.Write("Age: ");
+            if (!int.TryParse(Console.ReadLine(), out int tenantAge))
+            {
+                Console.WriteLine("Invalid input! Please enter a numeric age.");
+                return;
+            }
+
+            var newTenant = new Tenant
+            {
+                FullName = tenantName,
+                Age = tenantAge,
+            };
+
+            apartment.Tenants.Add(newTenant);
+            apartment.IsOccupied = true;
+            Console.WriteLine("New tenant registered successfully.");
         }
-
-        var newTenant = new Tenant
+        catch (Exception ex)
         {
-            FullName = tenantName,
-            Age = tenantAge,
-        };
-
-        apartment.Tenants.Add(newTenant);
-        apartment.IsOccupied = true;
-        Console.WriteLine("New tenant registered successfully.");
+            Console.WriteLine($"An error occurred: {ex.Message}");
+        }
     }
+
     public static void RemoveTenantFromApartment(Apartment apartment)
     {
-        Console.WriteLine("Enter the full name of the tenant to be removed:");
-        var tenantName = Console.ReadLine();
-        
-        var tenant = apartment.Tenants.FirstOrDefault(t => t.FullName == tenantName);
-        if (tenant == null)
+        try
         {
-            Console.WriteLine("Tenant not found.");
-            return;
-        }
+            Console.WriteLine("Enter the full name of the tenant to be removed:");
+            var tenantName = Console.ReadLine();
 
-        apartment.Tenants.Remove(tenant);
-        if (apartment.Tenants.Count == 0) apartment.IsOccupied = false;
-        Console.WriteLine("Tenant removed successfully.");
+            var tenant = apartment.Tenants.FirstOrDefault(t => t.FullName == tenantName);
+            if (tenant == null)
+            {
+                Console.WriteLine("Tenant not found.");
+                return;
+            }
+
+            apartment.Tenants.Remove(tenant);
+            if (apartment.Tenants.Count == 0) apartment.IsOccupied = false;
+            Console.WriteLine("Tenant removed successfully.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred: {ex.Message}");
+        }
     }
-    
+
     public static void UpdateTenantInformation(Apartment apartment)
     {
         Console.WriteLine("Enter the tenant's full name you want to update:");
         var tenantFullName = Console.ReadLine();
-        
+
         var tenant = apartment.Tenants.FirstOrDefault(t => t.FullName == tenantFullName);
         if (tenant == null)
         {
@@ -95,7 +110,7 @@ public class Tenant
         {
             tenant.Email = newEmail;
         }
-        
+
         Console.Write("Emergency Contact: ");
         var newEmergencyContact = Console.ReadLine();
         if (!string.IsNullOrEmpty(newEmergencyContact))
@@ -111,17 +126,18 @@ public class Tenant
 
         Console.WriteLine("Tenant information updated successfully.");
     }
-    
+
+
     public static void DisplayAllTenants(Apartment apartment)
     {
-        if(apartment.Tenants.Count == 0 || !apartment.Tenants.Any())
+        if (apartment.Tenants.Count == 0 || !apartment.Tenants.Any())
         {
             Console.WriteLine("No tenants found.");
             return;
         }
 
         Console.WriteLine("All the tenants:");
-        
+
         Console.WriteLine("\n-----------\n");
         foreach (var tenant in apartment.Tenants)
         {
@@ -132,7 +148,6 @@ public class Tenant
             Console.WriteLine($"Emergency Contact: {tenant.EmergencyContact}");
             Console.WriteLine($"Apartment Number: {tenant.ApartmentNumber}\n");
             Console.WriteLine("-----------");
-
         }
     }
 }

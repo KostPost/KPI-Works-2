@@ -129,7 +129,7 @@ class Program
                                                 break;
                                             }
 
-                                            case "2":
+                                            case "2": 
                                             {
                                                 bool workingInApartment = true;
                                                 do
@@ -324,6 +324,7 @@ class Program
 
                                         case "4":
                                         {
+                                            currentBuidling.CheckAllRepairExpenses();
                                             break;
                                         }
 
@@ -348,6 +349,10 @@ class Program
 
                 case "3":
                     Building.PrintBuildings(buildings);
+                    break;
+                
+                case "4":
+                    working = false;
                     break;
             }
         } while (working);

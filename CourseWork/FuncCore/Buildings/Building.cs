@@ -22,26 +22,12 @@ public class Building
 
     public void CheckAllRepairExpenses()
     {
-        Console.WriteLine("Please enter the landlord's name:");
-        string landlordName = Console.ReadLine();
-
-        var landLord = LandLords.FirstOrDefault(ll => ll.FullName.Equals(landlordName, StringComparison.OrdinalIgnoreCase));
-    
-        double totalRepairExpenses = 0.0;
-
-        foreach (var apartment in landLord.OwnedApartments)
-        {
-            double apartmentRepairExpenses = apartment.RepairExpenses.Sum(repairExpense => repairExpense.Cost);
-
-            totalRepairExpenses += apartmentRepairExpenses;
-
-            Console.WriteLine($"Repair expenses for apartment with number: {apartment.ApartmentNumber} is : {apartmentRepairExpenses}");
-        }
-
-        Console.WriteLine($"Total repair expenses for landlord {landlordName} is : {totalRepairExpenses}");
+        RepairExpense.CheckAllRepairExpenses(this);
     }
     public void CalculateLandlordIncome()
     {
+        try
+        {
         Console.WriteLine("Enter Landlord's name:");
         string landlordName = Console.ReadLine()?.Trim();
 
@@ -96,29 +82,46 @@ public class Building
         }
 
         Console.WriteLine($"Total income from {landlordName}'s apartments between {globalStartDate.ToShortDateString()} and {globalEndDate.ToShortDateString()} is: {totalIncome}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred: {ex.Message}");
+        }    
     }
+
     public void FindAllInfoAboutLandLord()
     {
-        Console.WriteLine("Enter Landlord's name:");
-        string landlordName = Console.ReadLine();
-
-        var landLord = LandLords.FirstOrDefault(ll => ll.FullName.Equals(landlordName, StringComparison.OrdinalIgnoreCase));
-
-        if (landLord == null)
+        try
         {
-            Console.WriteLine($"No landlord found with the name '{landlordName}'.");
-        }
-        else
-        {
-            Console.WriteLine($"Landlord Name: {landLord.FullName}, Owned Apartments: {landLord.OwnedApartments.Count}");
+            Console.WriteLine("Enter Landlord's name:");
+            string landlordName = Console.ReadLine();
 
-            foreach (var apartment in landLord.OwnedApartments)
+            var landLord =
+                LandLords.FirstOrDefault(ll => ll.FullName.Equals(landlordName, StringComparison.OrdinalIgnoreCase));
+
+            if (landLord == null)
             {
-                Console.WriteLine($"Apartment Info:");
-                apartment.PrintApartmentDetails();
+                Console.WriteLine($"No landlord found with the name '{landlordName}'.");
+            }
+            else
+            {
+                Console.WriteLine(
+                    $"Landlord Name: {landLord.FullName}, Owned Apartments: {landLord.OwnedApartments.Count}");
+
+                foreach (var apartment in landLord.OwnedApartments)
+                {
+                    Console.WriteLine($"Apartment Info:");
+                    apartment.PrintApartmentDetails();
+                }
             }
         }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred {ex.Message}");
+        }
     }
+    
+
     public void PrintAllLandLords()
     {
         if(LandLords.Count > 0)
@@ -189,30 +192,34 @@ public class Building
     
     public Apartment GetApartmentByNumber()
     {
-        Console.WriteLine("Enter the number of the apartment you want to select:");
+        try 
+        {
+            Console.WriteLine("Enter the number of the apartment you want to select:");
         
-        int apartmentNumber;
-        while (true)
+            int apartmentNumber;
+            while (true)
+            {
+                if(int.TryParse(Console.ReadLine(), out apartmentNumber))
+                {
+                    break;
+                }
+            }
+
+            foreach (var apartment in this.Apartments)
+            {
+                if(apartment.ApartmentNumber == apartmentNumber)
+                {
+                    return apartment;
+                }
+            }
+
+            Console.WriteLine($"No apartment found with the number: {apartmentNumber}");
+        }
+        catch (Exception ex)
         {
-            if(int.TryParse(Console.ReadLine(), out apartmentNumber))
-            {
-                break;
-            }
-            else
-            {
-                Console.WriteLine("Invalid input. Please enter a valid apartment number:");
-            }
+            Console.WriteLine($"An error occured: {ex.Message}");
         }
 
-        foreach (var apartment in this.Apartments)
-        {
-            if(apartment.ApartmentNumber == apartmentNumber)
-            {
-                return apartment;
-            }
-        }
-
-        Console.WriteLine($"No apartment found with the number: {apartmentNumber}");
         return null;
     }
     
@@ -258,26 +265,37 @@ public class Building
 
     public static Building? SelectBuilding(List<Building> buildings)
     {
-        if (buildings.Count == 0)
+        try
         {
-            Console.WriteLine("There are no buildings to select.");
-        }
-        else
-        {
-            Console.WriteLine("Select a building:");
-            for (int i = 0; i < buildings.Count; i++)
+            if (buildings.Count == 0)
             {
-                Console.WriteLine($"{i + 1}: {buildings[i].BuildingName}");
+                Console.WriteLine("There are no buildings to select.");
             }
+            else
+            {
+                Console.WriteLine("Select a building:");
+                for (int i = 0; i < buildings.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1}: {buildings[i].BuildingName}");
+                }
 
-            var buildingIndexInput = Console.ReadLine();
-            if (int.TryParse(buildingIndexInput, out int buildingIndex) && buildingIndex >= 1 &&
-                buildingIndex <= buildings.Count)
-            {
-                var selectedBuilding = buildings[buildingIndex - 1];
-                Console.WriteLine($"You selected building '{selectedBuilding.BuildingName}");
-                return selectedBuilding;
+                var buildingIndexInput = Console.ReadLine();
+                if (int.TryParse(buildingIndexInput, out int buildingIndex) && buildingIndex >= 1 &&
+                    buildingIndex <= buildings.Count)
+                {
+                    var selectedBuilding = buildings[buildingIndex - 1];
+                    Console.WriteLine($"You selected building '{selectedBuilding.BuildingName}");
+                    return selectedBuilding;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid selection. Please enter a number corresponding to a building.");
+                }
             }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"\nAn error occurred: {ex.Message}");
         }
 
         return null;

@@ -1,0 +1,242 @@
+<mxfile host="Electron" modified="2024-05-11T21:10:05.653Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="WM7fRomHLbd6BgVAOQkF" version="24.2.5" type="device">
+  <diagram name="Page-1" id="lOK7_bSmvfNUArvgLiD3">
+    <mxGraphModel dx="1744" dy="2287" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-1" target="gbIlrfRVLxVOCRnDxzNv-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="-50" />
+              <mxPoint x="450" y="-50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-1" target="bNMDX8TjoRJ5UFV-wIxO-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-1" target="bNMDX8TjoRJ5UFV-wIxO-60">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="560" y="280" />
+              <mxPoint x="560" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-1" target="bNMDX8TjoRJ5UFV-wIxO-67">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="165" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gbIlrfRVLxVOCRnDxzNv-1" value="Адміністратор" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" parent="1" vertex="1">
+          <mxGeometry x="150" y="220" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-39" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-47" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="gbIlrfRVLxVOCRnDxzNv-4" target="bNMDX8TjoRJ5UFV-wIxO-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gbIlrfRVLxVOCRnDxzNv-4" value="Управління квартирою" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="405" y="-120" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-4" value="Додайте витрати на комунальні послуги" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-250" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-6" value="Оновити дату оренди" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-390" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-7" value="Переглянути інформацію про квартиру" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-250" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-8" value="Видалити орендодавця" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-320" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-9" value="Розрахувати орендну плату" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="-390" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-10" value="Додати кімнату в квартиру" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-320" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-11" value="Додайте орендодавця" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="-390" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-12" value="Перегляньте інформацію про витрати на комунальні послуги" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="-250" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-13" value="Оновлення Вартість 1 кв" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="70" y="-390" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-14" value="Див. Витрати на ремонт" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-250" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-15" value="Закрити витрати на ремонт&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="-320" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-16" value="Додайте витрати на ремонт" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="-320" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-17" value="Менеджмент резидентів:" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-320" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-18" value="Реєстрація нових орендарів" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-390" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-19" value="Оновіть інформацію про орендаря" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="-250" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-20" value="Переглянути всіх орендарів" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="-390" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-21" value="Видалити орендаря" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="-320" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-22" value="Управління орендодавцем:" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="-250" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-49" target="bNMDX8TjoRJ5UFV-wIxO-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-49" target="bNMDX8TjoRJ5UFV-wIxO-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-49" target="bNMDX8TjoRJ5UFV-wIxO-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-49" target="bNMDX8TjoRJ5UFV-wIxO-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-49" value="Менеджмент резидентів:" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="110" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-50" value="Оновіть інформацію про орендаря" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="60" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-52" value="Реєстрація нових орендарів" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="-10" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-53" value="Видалити орендаря" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="200" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-54" value="Переглянути всіх орендарів" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="385" y="130" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-60" target="bNMDX8TjoRJ5UFV-wIxO-62">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-60" target="bNMDX8TjoRJ5UFV-wIxO-61">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-60" value="Управління орендодавцем:" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="90" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-61" value="Видалити орендодавця з квартири" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="120" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-62" value="Додайте орендодавця до квартири" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="50" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-76" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-67" target="bNMDX8TjoRJ5UFV-wIxO-75">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-67" target="bNMDX8TjoRJ5UFV-wIxO-73">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-81" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-67" target="bNMDX8TjoRJ5UFV-wIxO-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-67" target="bNMDX8TjoRJ5UFV-wIxO-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-87" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-67" target="bNMDX8TjoRJ5UFV-wIxO-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-88" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-67" target="bNMDX8TjoRJ5UFV-wIxO-72">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="400" />
+              <mxPoint x="820" y="465" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-89" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="bNMDX8TjoRJ5UFV-wIxO-67" target="bNMDX8TjoRJ5UFV-wIxO-74">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-67" value="Менеджмент резидентів:" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="380" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-69" value="Оновіть інформацію про орендаря" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="310" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-70" value="Реєстрація нових орендарів" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="250" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-71" value="Видалити орендаря" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="375" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-72" value="Переглянути всіх орендарів" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="440" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-73" value="Оновіть інформацію про орендаря" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="490" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-74" value="Реєстрація нових орендарів" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="940" y="510" width="130" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="bNMDX8TjoRJ5UFV-wIxO-75" value="Переглянути всіх орендарів" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="510" y="490" width="130" height="50" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -9,7 +9,6 @@ public class Apartment
     public int ApartmentNumber { get; set; }
     public long RoomCount { get; set; }
     public long Floor { get; set; }
-    public long BuildingId { get; set; }
     public double CostPerSquareMeter { get; set; }
     public DateTime RentTermStart { get; set; }
     public DateTime RentTermEnd { get; set; }
@@ -22,7 +21,6 @@ public class Apartment
 
     public Apartment()
     {
-        LandLord = null;
         Rooms = new List<Room>();
         Tenants = new List<Tenant>();
         UtilityExpenses = new List<UtilityExpense>();
@@ -47,6 +45,8 @@ public class Apartment
     }
     public void UpdateRentDate()
     {
+        try
+        {
         Console.WriteLine("Enter the new Rent Term Start Date (Format: dd-MM-yyyy):");
         string inputStartDate = Console.ReadLine();
 
@@ -68,6 +68,11 @@ public class Apartment
         RentTermStart = newRentStartDate;
         RentTermEnd = newRentEndDate;
         Console.WriteLine("Rent dates updated successfully.");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"An error occurred: {ex.Message}");
+        }
     }
     public void CalculateRentForPeriod()
     {
@@ -112,49 +117,26 @@ public class Apartment
     }
     public void AddRoom()
     {
-        Console.WriteLine("Enter room details:");
-
-        int roomNumber;
-        while (true)
-        {
-            Console.Write("Room Number: ");
-            if (int.TryParse(Console.ReadLine(), out roomNumber) && roomNumber <= RoomCount)
-            {
-                break;
-            }
-            
-        }
-
-        double roomArea;
-        while (true)
-        {
-            Console.Write("Room Area: ");
-            if (double.TryParse(Console.ReadLine(), out roomArea))
-            {
-                break;
-            }
-        }
-
-        var room = new Room
-        {
-            RoomNumber = roomNumber,
-            Area = roomArea
-        };
-
-        Rooms.Add(room);
-        Console.WriteLine("Room added successfully.");
+        Room.AddRoom(this);
     }
     public void UpdateCost()
     {
-        Console.WriteLine("Enter the new cost per one meter:");
-        if (double.TryParse(Console.ReadLine(), out double newCost))
+        try
         {
-            CostPerSquareMeter = newCost;
-            Console.WriteLine("Cost updated successfully.");
+            Console.WriteLine("Enter the new cost per one meter:");
+            if (double.TryParse(Console.ReadLine(), out double newCost))
+            {
+                CostPerSquareMeter = newCost;
+                Console.WriteLine("Cost updated successfully.");
+            }
+            else
+            {
+                Console.WriteLine("Invalid input. Please enter a valid floating point number.");
+            }
         }
-        else
+        catch (Exception ex)
         {
-            Console.WriteLine("Invalid input. Please enter a valid floating point number.");
+            Console.WriteLine($"An error occurred: {ex.Message}");
         }
     }
     
@@ -166,7 +148,6 @@ public class Apartment
         builder.AppendLine($"Apartment Number: {ApartmentNumber}");
         builder.AppendLine($"Room Count: {RoomCount}");
         builder.AppendLine($"Floor: {Floor}");
-        builder.AppendLine($"Building ID: {BuildingId}");
         builder.AppendLine($"Cost Per Square Meter: {CostPerSquareMeter:C}");
         builder.AppendLine($"Rent Term Start: {RentTermStart:d}");
         builder.AppendLine($"Rent Term End: {RentTermEnd:d}");
@@ -212,7 +193,6 @@ public class Apartment
             builder.AppendLine($"Apartment Number: {apartment.ApartmentNumber}");
             builder.AppendLine($"Room Count: {apartment.RoomCount}");
             builder.AppendLine($"Floor: {apartment.Floor}");
-            builder.AppendLine($"Building ID: {apartment.BuildingId}");
             builder.AppendLine($"Cost Per Square Meter: {apartment.CostPerSquareMeter:C}");
             builder.AppendLine($"Rent Term Start: {apartment.RentTermStart:d}");
             builder.AppendLine($"Rent Term End: {apartment.RentTermEnd:d}");

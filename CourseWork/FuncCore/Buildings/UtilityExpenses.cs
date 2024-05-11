@@ -4,8 +4,6 @@ namespace FuncCore;
 
 public class UtilityExpense
 {
-    public long ApartmentId { get; set; }
-
     public decimal RentCost { get; set; }
 
     public decimal AllUtilityExpenses { get; set; }
@@ -29,9 +27,11 @@ public class UtilityExpense
     public DateTime UtilityExpensesMonth { get; set; }
 
     public static void AddUtilityCosts(Apartment apartment)
+{
+    var expense = new UtilityExpense();
+
+    try 
     {
-        var expense = new UtilityExpense();
-        
         Console.WriteLine("Enter the month for which to add utility costs (Format: MM-YYYY):");
         expense.UtilityExpensesMonth = DateTime.ParseExact(Console.ReadLine(), "MM-yyyy", CultureInfo.InvariantCulture);
 
@@ -67,16 +67,24 @@ public class UtilityExpense
 
         Console.WriteLine("Utility expenses added successfully for month: " + expense.UtilityExpensesMonth.ToString("MM-yyyy"));
 
-        
+
         apartment.UtilityExpenses.Add(expense);
     }
+    catch (FormatException)
+    {
+        Console.WriteLine("Error: Incorrect format was provided. Please check your inputs and try again.");
+    }
+    catch (OverflowException)
+    {
+        Console.WriteLine("Error: Number provided was too large or too small. Please check your inputs and try again.");
+    }
+}
     public static void PrintUtilityExpenses(List<UtilityExpense> utilityExpenses)    
     {
-        if (utilityExpenses?.Any() == true)
+        if (utilityExpenses.Any())
         {
             foreach (var expense in utilityExpenses)
             {
-                Console.WriteLine($"Apartment ID: {expense.ApartmentId}");
                 Console.WriteLine($"Utility Expenses Month: {expense.UtilityExpensesMonth}");
                 Console.WriteLine($"Rent Cost: {expense.RentCost:C}");
                 Console.WriteLine($"All Utility Expenses: {expense.AllUtilityExpenses:C}");

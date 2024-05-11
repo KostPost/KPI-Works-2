@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{86D06E95-3181-454E-9691-5FA8D54DE0A9}|ConsoleCommander\\ConsoleCommander.csproj|p:\\kpi-works 2\\op2\\courseworkold\\consolecommander\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{86D06E95-3181-454E-9691-5FA8D54DE0A9}|ConsoleCommander\\ConsoleCommander.csproj|solutionrelative:consolecommander\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\ConsoleCommander\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleCommander\\Program.cs",
+              "ToolTip": "P:\\KPI-Works 2\\OP2\\CourseworkOld\\ConsoleCommander\\Program.cs",
+              "RelativeToolTip": "ConsoleCommander\\Program.cs",
+              "ViewState": "AQIAAP8AAAAAAAAAAAAAABUBAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-09T20:42:19.179Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
