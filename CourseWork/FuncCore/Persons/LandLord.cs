@@ -10,8 +10,6 @@ public class LandLord
     public int ApartmentNumber { get; set; }
 
     public List<Apartment> OwnedApartments { get; set; } = new List<Apartment>();
-    public double Income { get; set; }
-
     public static void AddLandlordToApartment(Apartment apartment,LandLord landLord, Building building)
     {
         if (landLord != null)

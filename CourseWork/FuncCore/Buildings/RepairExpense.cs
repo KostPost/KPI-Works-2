@@ -2,7 +2,7 @@
 
 public class RepairExpense
 {
-    public decimal Cost { get; set; }
+    public double Cost { get; set; }
     public string Description { get; set; }
     
     
@@ -11,7 +11,7 @@ public class RepairExpense
         Console.WriteLine("Enter the repair expense description:");
         string description = Console.ReadLine();
         Console.WriteLine("Enter the repair expense cost:");
-        if (decimal.TryParse(Console.ReadLine(), out decimal cost))
+        if (double.TryParse(Console.ReadLine(), out double cost))
         {
             var repairExpense = new RepairExpense { Description = description, Cost = cost };
             apartment.RepairExpenses.Add(repairExpense);

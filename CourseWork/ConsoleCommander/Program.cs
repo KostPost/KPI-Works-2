@@ -299,7 +299,8 @@ class Program
                                     Console.WriteLine("1. See all LandLords\n" +
                                                       "2. See information about LandLord\n" +
                                                       "3. Calculate a total income from landlord's apartments\n" +
-                                                      "4. Exit\n");
+                                                      "4. Calculate a total RepairExpenses" +
+                                                      "5. Exit\n");
                                     actionApartment = Console.ReadLine();
 
                                     switch (actionApartment)
@@ -322,6 +323,11 @@ class Program
                                         }
 
                                         case "4":
+                                        {
+                                            break;
+                                        }
+
+                                        case "5":
                                             workingLandLord = false;
                                             break;
                                         

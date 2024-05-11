@@ -19,7 +19,27 @@ public class Building
         Apartments = new List<Apartment>();
         LandLords = new List<LandLord>();
     }
+
+    public void CheckAllRepairExpenses()
+    {
+        Console.WriteLine("Please enter the landlord's name:");
+        string landlordName = Console.ReadLine();
+
+        var landLord = LandLords.FirstOrDefault(ll => ll.FullName.Equals(landlordName, StringComparison.OrdinalIgnoreCase));
     
+        double totalRepairExpenses = 0.0;
+
+        foreach (var apartment in landLord.OwnedApartments)
+        {
+            double apartmentRepairExpenses = apartment.RepairExpenses.Sum(repairExpense => repairExpense.Cost);
+
+            totalRepairExpenses += apartmentRepairExpenses;
+
+            Console.WriteLine($"Repair expenses for apartment with number: {apartment.ApartmentNumber} is : {apartmentRepairExpenses}");
+        }
+
+        Console.WriteLine($"Total repair expenses for landlord {landlordName} is : {totalRepairExpenses}");
+    }
     public void CalculateLandlordIncome()
     {
         Console.WriteLine("Enter Landlord's name:");
@@ -77,7 +97,6 @@ public class Building
 
         Console.WriteLine($"Total income from {landlordName}'s apartments between {globalStartDate.ToShortDateString()} and {globalEndDate.ToShortDateString()} is: {totalIncome}");
     }
-
     public void FindAllInfoAboutLandLord()
     {
         Console.WriteLine("Enter Landlord's name:");
