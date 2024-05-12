@@ -93,11 +93,11 @@ public class Apartment
     }
     public void AddLandlordToApartment(Building building)
     {
-        LandLord.AddLandlordToApartment(this,LandLord, building);
+        LandLord.AddLandlordToApartment(this, building);
     }
     public void RemoveLandlordFromApartment(Building building)
     {
-        LandLord.RemoveLandlordFromApartment(this, LandLord,building);
+        LandLord.RemoveLandlordFromApartment(this,building);
     }
     public void RemoveTenant()
     {

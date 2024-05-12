@@ -27,59 +27,65 @@ public class UtilityExpense
     public DateTime UtilityExpensesMonth { get; set; }
 
     public static void AddUtilityCosts(Apartment apartment)
-{
-    var expense = new UtilityExpense();
-
-    try 
     {
-        Console.WriteLine("Enter the month for which to add utility costs (Format: MM-YYYY):");
-        expense.UtilityExpensesMonth = DateTime.ParseExact(Console.ReadLine(), "MM-yyyy", CultureInfo.InvariantCulture);
+        var expense = new UtilityExpense();
 
-        Console.WriteLine("Enter the rent cost:");
-        expense.RentCost = decimal.Parse(Console.ReadLine());
+        try
+        {
+            Console.WriteLine("Enter the month for which to add utility costs (Format: MM-YYYY):");
+            expense.UtilityExpensesMonth =
+                DateTime.ParseExact(Console.ReadLine(), "MM-yyyy", CultureInfo.InvariantCulture);
 
-        Console.WriteLine("Enter the heating cost:");
-        expense.HeatingCost = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the rent cost:");
+            expense.RentCost = decimal.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter the water cost:");
-        expense.WaterCost = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the heating cost:");
+            expense.HeatingCost = decimal.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter the electricity cost:");
-        expense.ElectricityCost = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the water cost:");
+            expense.WaterCost = decimal.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter the gas cost:");
-        expense.GasCost = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the electricity cost:");
+            expense.ElectricityCost = decimal.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter the cleaning cost:");
-        expense.CleaningCost = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the gas cost:");
+            expense.GasCost = decimal.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter the management cost:");
-        expense.ManagementCost = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the cleaning cost:");
+            expense.CleaningCost = decimal.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter the trash removal cost:");
-        expense.TrashRemovalCost = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the management cost:");
+            expense.ManagementCost = decimal.Parse(Console.ReadLine());
 
-        Console.WriteLine("Enter the internet, TV, and phone cost:");
-        expense.InternetTvPhoneCost = decimal.Parse(Console.ReadLine());
+            Console.WriteLine("Enter the trash removal cost:");
+            expense.TrashRemovalCost = decimal.Parse(Console.ReadLine());
 
-        expense.AllUtilityExpenses = expense.HeatingCost + expense.WaterCost + expense.ElectricityCost + expense.GasCost + 
-                                     expense.CleaningCost + expense.ManagementCost + expense.TrashRemovalCost + expense.InternetTvPhoneCost;
+            Console.WriteLine("Enter the internet, TV, and phone cost:");
+            expense.InternetTvPhoneCost = decimal.Parse(Console.ReadLine());
 
-        Console.WriteLine("Utility expenses added successfully for month: " + expense.UtilityExpensesMonth.ToString("MM-yyyy"));
+            expense.AllUtilityExpenses = expense.HeatingCost + expense.WaterCost + expense.ElectricityCost +
+                                         expense.GasCost +
+                                         expense.CleaningCost + expense.ManagementCost + expense.TrashRemovalCost +
+                                         expense.InternetTvPhoneCost;
+
+            Console.WriteLine("Utility expenses added successfully for month: " +
+                              expense.UtilityExpensesMonth.ToString("MM-yyyy"));
 
 
-        apartment.UtilityExpenses.Add(expense);
+            apartment.UtilityExpenses.Add(expense);
+        }
+        catch (FormatException)
+        {
+            Console.WriteLine("Error: Incorrect format was provided. Please check your inputs and try again.");
+        }
+        catch (OverflowException)
+        {
+            Console.WriteLine(
+                "Error: Number provided was too large or too small. Please check your inputs and try again.");
+        }
     }
-    catch (FormatException)
-    {
-        Console.WriteLine("Error: Incorrect format was provided. Please check your inputs and try again.");
-    }
-    catch (OverflowException)
-    {
-        Console.WriteLine("Error: Number provided was too large or too small. Please check your inputs and try again.");
-    }
-}
-    public static void PrintUtilityExpenses(List<UtilityExpense> utilityExpenses)    
+
+    public static void PrintUtilityExpenses(List<UtilityExpense> utilityExpenses)
     {
         if (utilityExpenses.Any())
         {
@@ -98,7 +104,7 @@ public class UtilityExpense
                 Console.WriteLine($"Internet, TV, and Phone Cost: {expense.InternetTvPhoneCost:C}");
                 Console.WriteLine("");
             }
-        
+
             var totalRentCost = utilityExpenses.Sum(item => item.RentCost);
             Console.WriteLine($"Total Rent Cost: {totalRentCost:C}");
         }
@@ -107,5 +113,4 @@ public class UtilityExpense
             Console.WriteLine("No utility expenses data available.");
         }
     }
-    
 }

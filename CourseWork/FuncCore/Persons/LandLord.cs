@@ -5,11 +5,11 @@ public class LandLord
     public string FullName { get; set; }
     public List<Apartment> OwnedApartments { get; set; } = new List<Apartment>();
 
-    public static void AddLandlordToApartment(Apartment apartment, LandLord landLord, Building building)
+    public static void AddLandlordToApartment(Apartment apartment, Building building)
     {
         try
         {
-            if (landLord != null)
+            if (apartment.LandLord != null)
             {
                 Console.WriteLine("A landlord already exists. Do you really want to change the landlord? (yes/no)");
                 var response = Console.ReadLine();
@@ -43,10 +43,10 @@ public class LandLord
             }
             else
             {
-                landLord = new LandLord { FullName = landlordName };
-                apartment.LandLord = landLord;
-                building.LandLords.Add(landLord);
-                landLord.OwnedApartments.Add(apartment);
+                apartment.LandLord = new LandLord { FullName = landlordName };
+                apartment.LandLord = apartment.LandLord;
+                building.LandLords.Add(apartment.LandLord);
+                apartment.LandLord.OwnedApartments.Add(apartment);
                 Console.WriteLine($"Landlord {landlordName} added successfully.");
             }
         }
@@ -56,28 +56,28 @@ public class LandLord
         }
     }
 
-    public static void RemoveLandlordFromApartment(Apartment apartment, LandLord landLord, Building building)
+    public static void RemoveLandlordFromApartment(Apartment apartment, Building building)
     {
         try
         {
-            if (landLord == null)
+            if (apartment.LandLord == null)
             {
                 Console.WriteLine("No landlord to remove.");
                 return;
             }
 
-            landLord.OwnedApartments.Remove(apartment);
+            apartment.LandLord.OwnedApartments.Remove(apartment);
 
-            if (landLord.OwnedApartments.Count == 0)
+            if (apartment.LandLord.OwnedApartments.Count == 0)
             {
-                building.LandLords.Remove(landLord);
+                building.LandLords.Remove(apartment.LandLord);
                 Console.WriteLine(
-                    $"Landlord {landLord.FullName} does not own any more apartments and has been removed from the building.");
+                    $"Landlord {apartment.LandLord.FullName} does not own any more apartments and has been removed from the building.");
             }
             else
             {
                 Console.WriteLine(
-                    $"Landlord {landLord.FullName} removed from apartment, but they still own other apartments in the building.");
+                    $"Landlord {apartment.LandLord.FullName} removed from apartment, but they still own other apartments in the building.");
             }
 
             apartment.LandLord = null;
