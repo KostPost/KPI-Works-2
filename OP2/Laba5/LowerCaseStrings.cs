@@ -6,7 +6,6 @@ public class LowerCaseStrings : Strings
     {
     }
 
-    // Перевизначений метод для сортування за спаданням
     public override void SortAndPrint()
     {
         var sorted = string.Concat(content.OrderByDescending(c => c));

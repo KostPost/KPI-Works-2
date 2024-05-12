@@ -1,44 +1,49 @@
 ﻿namespace Laba2;
 
-public class TextContainer
+public abstract class TextContainer
 {
-    private List<MyString> text = new List<MyString>();
+    protected string Text { get; set; }
 
-    public void AddLine(MyString line)
+    public void AddLine(string line)
     {
-        text.Add(line);
+        Text += line + Environment.NewLine;
     }
 
-    public void RemoveLine(MyString line)
+    public void RemoveLine(string line)
     {
-        text.Remove(line);
-    }
-
-    public void RemoveLinesContaining(string substring)
-    {
-        text = text.Where(line => !line.Contains(substring)).ToList();
+        Text = Text.Replace(line + Environment.NewLine, "");
     }
 
     public void ClearText()
     {
-        text.Clear();
+        Text = string.Empty;
     }
 
-    public MyString GetLongestLine()
+    public int ShortestLineLength()
     {
-        return text.OrderByDescending(line => line.Length).FirstOrDefault();
+        string[] lines = Text.Split(new string[] { Environment.NewLine }, StringSplitOptions.RemoveEmptyEntries);
+        return lines.Min(line => line.Length);
     }
 
-    public void CapitalizeFirstLetters()
+    public double ConsonantPercentage()
     {
-        foreach (var line in text)
-        {
-            line.MakeFirstLetterUpperCase();
-        }
+        if (Text.Length == 0)
+            return 0;
+
+        int consonantCount = StringMethods.CountConsonants(Text);
+        double totalChars = Text.Count(char.IsLetter);
+        return (consonantCount / totalChars) * 100;
     }
 
-    public override string ToString()
+    public void ReplaceMultipleSpaces()
     {
-        return String.Join("\n", text);
+        Text = StringMethods.ReplaceMultipleSpaces(Text);
     }
+
+    public void TrimAndNormalize()
+    {
+        Text = StringMethods.TrimAndNormalize(Text);
+    }
+
+    public abstract void Display();
 }

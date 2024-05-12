@@ -1,6 +1,4 @@
-﻿using Laba4;
-
-
+﻿
 namespace Laba4;
 
 class Program

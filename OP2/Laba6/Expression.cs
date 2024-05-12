@@ -8,13 +8,7 @@ public class Expression
     private double b;
     private double c;
     private double d;
-
-    // Конструктор за умовчанням
-    public Expression()
-    {
-    }
-
-    // Конструктор з параметрами
+    
     public Expression(double a, double b, double c, double d)
     {
         this.a = a;
@@ -22,12 +16,6 @@ public class Expression
         this.c = c;
         this.d = d;
     }
-
-    public void SetA(double a) { this.a = a; }
-    public void SetB(double b) { this.b = b; }
-    public void SetC(double c) { this.c = c; }
-    public void SetD(double d) { this.d = d; }
-
     public double Evaluate()
     {
         if (d == 0) throw new DivideByZeroException("Division by zero in the denominator.");

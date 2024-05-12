@@ -14,17 +14,17 @@
             Console.WriteLine($"Original value: {value}, IncrementReturn: {incrementedReturnValue}");
         }
 
-        int[] equalityTestValuesA = { 100, -8, 132 };
-        int[] equalityTestValuesB = { 100, 125, 131 };
-        Console.WriteLine("\nTesting CheckEquality and CheckEqualityReturn functions:");
-        for (int i = 0; i < equalityTestValuesA.Length; i++)
+        int[] inequalityTestValuesA = { 100, -8, 132 };
+        int[] inequalityTestValuesB = { 100, 125, 131 };
+        Console.WriteLine("\nTesting CheckLessThan and CheckLessThanReturn functions:");
+        for (int i = 0; i < inequalityTestValuesA.Length; i++)
         {
-            bool isEqual = false;
-            CheckEquality(equalityTestValuesA[i], equalityTestValuesB[i], ref isEqual);
-            Console.WriteLine($"{equalityTestValuesA[i]} == {equalityTestValuesB[i]}: {isEqual}");
+            bool isLessThan = false;
+            CheckLessThan(inequalityTestValuesA[i], inequalityTestValuesB[i], ref isLessThan);
+            Console.WriteLine($"{inequalityTestValuesA[i]} < {inequalityTestValuesB[i]}: {isLessThan}");
 
-            bool isEqualReturn = CheckEqualityReturn(equalityTestValuesA[i], equalityTestValuesB[i]);
-            Console.WriteLine($"{equalityTestValuesA[i]} == {equalityTestValuesB[i]}: {isEqualReturn}");
+            bool isLessThanReturn = CheckLessThanReturn(inequalityTestValuesA[i], inequalityTestValuesB[i]);
+            Console.WriteLine($"{inequalityTestValuesA[i]} < {inequalityTestValuesB[i]}: {isLessThanReturn}");
         }
     }
 
@@ -38,13 +38,13 @@
         return value - 1;
     }
 
-    static void CheckEquality(int value1, int value2, ref bool res)
+    static void CheckLessThan(int value1, int value2, ref bool res)
     {
-        res = value1 == value2;
+        res = value1 < value2;
     }
 
-    static bool CheckEqualityReturn(int value1, int value2)
+    static bool CheckLessThanReturn(int value1, int value2)
     {
-        return value1 == value2;
+        return value1 < value2;
     }
 }

@@ -1,9 +1,3 @@
-P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.csproj.AssemblyReference.cache
-P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.GeneratedMSBuildEditorConfig.editorconfig
-P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.AssemblyInfoInputs.cache
-P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.AssemblyInfo.cs
-P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.csproj.CoreCompileInputs.cache
-P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.sourcelink.json
 P:\KPI-Works 2\CourseWork\ConsoleCommander\bin\Debug\net8.0\ConsoleCommander.exe
 P:\KPI-Works 2\CourseWork\ConsoleCommander\bin\Debug\net8.0\ConsoleCommander.deps.json
 P:\KPI-Works 2\CourseWork\ConsoleCommander\bin\Debug\net8.0\ConsoleCommander.runtimeconfig.json
@@ -11,6 +5,12 @@ P:\KPI-Works 2\CourseWork\ConsoleCommander\bin\Debug\net8.0\ConsoleCommander.dll
 P:\KPI-Works 2\CourseWork\ConsoleCommander\bin\Debug\net8.0\ConsoleCommander.pdb
 P:\KPI-Works 2\CourseWork\ConsoleCommander\bin\Debug\net8.0\FuncCore.dll
 P:\KPI-Works 2\CourseWork\ConsoleCommander\bin\Debug\net8.0\FuncCore.pdb
+P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.csproj.AssemblyReference.cache
+P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.GeneratedMSBuildEditorConfig.editorconfig
+P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.AssemblyInfoInputs.cache
+P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.AssemblyInfo.cs
+P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.csproj.CoreCompileInputs.cache
+P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.sourcelink.json
 P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleC.D4A4AF02.Up2Date
 P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\ConsoleCommander.dll
 P:\KPI-Works 2\CourseWork\ConsoleCommander\obj\Debug\net8.0\refint\ConsoleCommander.dll

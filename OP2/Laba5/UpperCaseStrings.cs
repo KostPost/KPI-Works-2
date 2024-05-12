@@ -6,7 +6,6 @@ public class UpperCaseStrings : Strings
     {
     }
 
-    // Перевизначений метод для сортування за зростанням
     public override void SortAndPrint()
     {
         var sorted = string.Concat(content.OrderBy(c => c));

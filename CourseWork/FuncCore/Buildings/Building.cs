@@ -12,8 +12,6 @@ public class Building
 
     public List<LandLord> LandLords { get; set; }
     
-    private BuildingInputUtils _inputUtils;
-
     private Building()
     {
         Apartments = new List<Apartment>();
@@ -144,20 +142,20 @@ public class Building
 
         while (continueInput)
         {
-            newApartment.ApartmentNumber = _inputUtils.PromptForInt("Apartment Number: ");
+            newApartment.ApartmentNumber = PromptForInt("Apartment Number: ");
             if (Apartments.Any(a => a.ApartmentNumber == newApartment.ApartmentNumber))
             {
                 Console.WriteLine("An apartment with this number already exists. Please provide a different number.");
                 continue;
             }
             
-            newApartment.RoomCount = _inputUtils.PromptForLong("Room Count: ");
-            newApartment.Floor = _inputUtils.PromptForFloor("Floor: ");
-            newApartment.CostPerSquareMeter = _inputUtils.PromptForDouble("Cost Per Square Meter: ");
+            newApartment.RoomCount = PromptForLong("Room Count: ");
+            newApartment.Floor = PromptForFloor("Floor: ");
+            newApartment.CostPerSquareMeter = PromptForDouble("Cost Per Square Meter: ");
 
-           
 
-            string? response = null;
+
+            string? response;
             do
             {
                 Console.WriteLine("\nApartment details:");
@@ -181,7 +179,7 @@ public class Building
                             continueInput = false;
                         break;
                     case "change":
-                        _inputUtils.ChangeApartmentDetail(ref newApartment);
+                        ChangeApartmentDetail(ref newApartment);
                         break;
                     default:
                         Console.WriteLine("Invalid option. Please enter yes, no, or change.");
@@ -251,7 +249,6 @@ public class Building
                 NumberOfFloors = numberOfFloors
             };
 
-            newBuilding._inputUtils = new BuildingInputUtils(numberOfFloors);
 
             buildings.Add(newBuilding);
            
@@ -287,10 +284,6 @@ public class Building
                     Console.WriteLine($"You selected building '{selectedBuilding.BuildingName}");
                     return selectedBuilding;
                 }
-                else
-                {
-                    Console.WriteLine("Invalid selection. Please enter a number corresponding to a building.");
-                }
             }
         }
         catch (Exception ex)
@@ -313,6 +306,82 @@ public class Building
             foreach (var building in buildings)
             {
                 Console.WriteLine($"Name: {building.BuildingName}, Number of Floors: {building.NumberOfFloors}");
+            }
+        }
+    }
+    
+    private int PromptForInt(string message)
+    {
+        int value;
+        do
+        {
+            Console.Write(message);
+            string input = Console.ReadLine();
+            if (int.TryParse(input, out value))
+                return value;
+            Console.WriteLine("Invalid input. Please enter a valid number.");
+        } while (true);
+    }
+    private long PromptForLong(string message)
+    {
+        long value;
+        do
+        {
+            Console.Write(message);
+            string input = Console.ReadLine();
+            if (long.TryParse(input, out value))
+                return value;
+            Console.WriteLine("Invalid input. Please enter a valid number.");
+        } while (true);
+    }
+    private int PromptForFloor(string message)
+    {
+        int floor;
+        do
+        {
+            Console.Write(message);
+            string input = Console.ReadLine();
+            if (int.TryParse(input, out floor) && floor <= NumberOfFloors)
+                return floor;
+            Console.WriteLine($"Invalid Floor. The building has only {NumberOfFloors} floors.");
+        } while (true);
+    }
+    private double PromptForDouble(string message)
+    {
+        double value;
+        do
+        {
+            Console.Write(message);
+            string input = Console.ReadLine();
+            if (double.TryParse(input, out value))
+                return value;
+            Console.WriteLine("Invalid input. Please enter a valid number.");
+        } while (true);
+    }
+    private void ChangeApartmentDetail(ref Apartment apartment)
+    {
+        while (true)
+        {
+            Console.WriteLine("Which detail do you want to change?");
+            Console.WriteLine("1: Apartment Number\n2: Room Count\n3: Floor\n4: Cost Per Square Meter");
+
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    apartment.ApartmentNumber = PromptForInt("New Apartment Number: ");
+                    return;
+                case "2":
+                    apartment.RoomCount = PromptForLong("New Room Count: ");
+                    return;
+                case "3":
+                    apartment.Floor = PromptForFloor("New Floor: ");
+                    return;
+                case "4":
+                    apartment.CostPerSquareMeter = PromptForDouble("New Cost Per Square Meter: ");
+                    return;
+                default:
+                    Console.WriteLine("Invalid option selected. Please select among the options (1-4).");
+                    break;
             }
         }
     }

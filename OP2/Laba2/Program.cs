@@ -2,30 +2,19 @@
 
 class Program
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        var textContainer = new TextContainer();
+        Text text1 = new Text();
+        text1.AddLine("Hello, world!");
+        text1.AddLine("This is a sample text with multiple spaces.");
+        text1.AddLine("  This line has extra spaces at the beginning and end.   ");
+        text1.Display();
 
-        textContainer.AddLine(new MyString("hello world"));
-        textContainer.AddLine(new MyString("the quick brown fox"));
-        textContainer.AddLine(new MyString("jumps over the lazy dog"));
-
-        Console.WriteLine("Initial text:");
-        Console.WriteLine(textContainer);
-
-        Console.WriteLine("\nText after capitalizing first letters:");
-        textContainer.CapitalizeFirstLetters();
-        Console.WriteLine(textContainer);
-
-        Console.WriteLine("\nLongest line:");
-        Console.WriteLine(textContainer.GetLongestLine());
-
-        Console.WriteLine("\nText after removing lines containing 'the':");
-        textContainer.RemoveLinesContaining("he");
-        Console.WriteLine(textContainer);
-
-        Console.WriteLine("\nText after clearing:");
-        textContainer.ClearText();
-        Console.WriteLine(textContainer);
+        Console.WriteLine($"Shortest line length: {text1.ShortestLineLength()}");
+        Console.WriteLine($"Consonant percentage: {text1.ConsonantPercentage()}%");
+        text1.ReplaceMultipleSpaces();
+        text1.TrimAndNormalize();
+        Console.WriteLine("Text after replacing multiple spaces and trimming:");
+        text1.Display();
     }
 }
